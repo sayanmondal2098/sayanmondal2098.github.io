@@ -1,4 +1,4 @@
-['css/education.css','css/experience.css'].forEach(href=>{const stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href=href;document.head.appendChild(stylesheet)});
+['css/education.css?v=2','css/experience.css'].forEach(href=>{const stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href=href;document.head.appendChild(stylesheet)});
 
 const parseMonth=value=>{const[year,month]=value.split('-').map(Number);return{year,month}};
 const monthsBetween=(startValue,endValue)=>{const start=parseMonth(startValue);const end=endValue?parseMonth(endValue):{year:new Date().getFullYear(),month:new Date().getMonth()+1};return Math.max(0,(end.year-start.year)*12+(end.month-start.month)+1)};
