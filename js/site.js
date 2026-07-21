@@ -1,14 +1,123 @@
-['css/education.css?v=2','css/experience.css','css/blog.css'].forEach(href=>{const stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href=href;document.head.appendChild(stylesheet)});
-if(!document.querySelector('link[rel="icon"]')){const favicon=document.createElement('link');favicon.rel='icon';favicon.type='image/svg+xml';favicon.href='img/branding/favicon.svg?v=5';document.head.appendChild(favicon)}
-document.querySelectorAll('.institution').forEach(institution=>{if(institution.textContent.trim()==='Techno India')institution.textContent='Techno India University, West Bengal'});
+const assetRoot = window.location.pathname.includes("/pages/") ? "../" : "";
+["css/education.css?v=2", "css/experience.css", "css/blog.css"].forEach(
+  (href) => {
+    const stylesheet = document.createElement("link");
+    stylesheet.rel = "stylesheet";
+    stylesheet.href = assetRoot + href;
+    document.head.appendChild(stylesheet);
+  },
+);
+if (!document.querySelector('link[rel="icon"]')) {
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/svg+xml";
+  favicon.href = assetRoot + "img/branding/favicon.svg?v=5";
+  document.head.appendChild(favicon);
+}
+document.querySelectorAll(".institution").forEach((institution) => {
+  if (institution.textContent.trim() === "Techno India")
+    institution.textContent = "Techno India University, West Bengal";
+});
 
-const parseMonth=value=>{const[year,month]=value.split('-').map(Number);return{year,month}};
-const monthsBetween=(startValue,endValue)=>{const start=parseMonth(startValue);const end=endValue?parseMonth(endValue):{year:new Date().getFullYear(),month:new Date().getMonth()+1};return Math.max(0,(end.year-start.year)*12+(end.month-start.month)+1)};
-const formatRoleDuration=months=>{const years=Math.floor(months/12);const remainingMonths=months%12;const parts=[];if(years)parts.push(`${years} ${years===1?'year':'years'}`);if(remainingMonths)parts.push(`${remainingMonths} ${remainingMonths===1?'month':'months'}`);return parts.join(' ')||'<1 month'};
-const formatOverallDuration=months=>{const years=Math.floor(months/12);return years<1?'<1 year':`${years}+ ${years===1?'year':'years'}`};
-document.querySelectorAll('.experience-item[data-start]').forEach(item=>{const output=item.querySelector('.role-duration');if(output)output.textContent=formatRoleDuration(monthsBetween(item.dataset.start,item.dataset.end))});
-const experienceTotal=document.getElementById('experience-years');if(experienceTotal)experienceTotal.textContent=formatOverallDuration(monthsBetween(experienceTotal.dataset.start));
+const parseMonth = (value) => {
+  const [year, month] = value.split("-").map(Number);
+  return { year, month };
+};
+const monthsBetween = (startValue, endValue) => {
+  const start = parseMonth(startValue);
+  const end = endValue
+    ? parseMonth(endValue)
+    : { year: new Date().getFullYear(), month: new Date().getMonth() + 1 };
+  return Math.max(
+    0,
+    (end.year - start.year) * 12 + (end.month - start.month) + 1,
+  );
+};
+const formatRoleDuration = (months) => {
+  const years = Math.floor(months / 12);
+  const remainingMonths = months % 12;
+  const parts = [];
+  if (years) parts.push(`${years} ${years === 1 ? "year" : "years"}`);
+  if (remainingMonths)
+    parts.push(
+      `${remainingMonths} ${remainingMonths === 1 ? "month" : "months"}`,
+    );
+  return parts.join(" ") || "<1 month";
+};
+const formatOverallDuration = (months) => {
+  const years = Math.floor(months / 12);
+  return years < 1 ? "<1 year" : `${years}+ ${years === 1 ? "year" : "years"}`;
+};
+document.querySelectorAll(".experience-item[data-start]").forEach((item) => {
+  const output = item.querySelector(".role-duration");
+  if (output)
+    output.textContent = formatRoleDuration(
+      monthsBetween(item.dataset.start, item.dataset.end),
+    );
+});
+const experienceTotal = document.getElementById("experience-years");
+if (experienceTotal)
+  experienceTotal.textContent = formatOverallDuration(
+    monthsBetween(experienceTotal.dataset.start),
+  );
 
-const socialRow=document.querySelector('.social-row');if(socialRow){const github=[...socialRow.querySelectorAll('a')].find(link=>link.textContent.trim()==='GitHub');const profiles=[{label:'ORCID',href:'https://orcid.org/0009-0004-7096-4179',rel:'me noopener'},{label:'Google Scholar',href:'https://scholar.google.com/citations?user=dwLadG8AAAAJ&hl=en',rel:'noopener'}];profiles.forEach(profile=>{if(!socialRow.querySelector(`a[href="${profile.href}"]`)){const link=document.createElement('a');link.href=profile.href;link.target='_blank';link.rel=profile.rel;link.textContent=profile.label;socialRow.insertBefore(link,github||null)}})}
-const toggle=document.querySelector('.menu-toggle');const links=document.querySelector('.nav-links');if(toggle&&links){toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});links.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false')}))}
-const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();const items=document.querySelectorAll('.reveal');if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.1});items.forEach(item=>observer.observe(item))}else{items.forEach(item=>item.classList.add('visible'))}
+const socialRow = document.querySelector(".social-row");
+if (socialRow) {
+  const github = [...socialRow.querySelectorAll("a")].find(
+    (link) => link.textContent.trim() === "GitHub",
+  );
+  const profiles = [
+    {
+      label: "ORCID",
+      href: "https://orcid.org/0009-0004-7096-4179",
+      rel: "me noopener",
+    },
+    {
+      label: "Google Scholar",
+      href: "https://scholar.google.com/citations?user=dwLadG8AAAAJ&hl=en",
+      rel: "noopener",
+    },
+  ];
+  profiles.forEach((profile) => {
+    if (!socialRow.querySelector(`a[href="${profile.href}"]`)) {
+      const link = document.createElement("a");
+      link.href = profile.href;
+      link.target = "_blank";
+      link.rel = profile.rel;
+      link.textContent = profile.label;
+      socialRow.insertBefore(link, github || null);
+    }
+  });
+}
+const toggle = document.querySelector(".menu-toggle");
+const links = document.querySelector(".nav-links");
+if (toggle && links) {
+  toggle.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+  links.querySelectorAll("a").forEach((link) =>
+    link.addEventListener("click", () => {
+      links.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }),
+  );
+}
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
+const items = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      }),
+    { threshold: 0.1 },
+  );
+  items.forEach((item) => observer.observe(item));
+} else {
+  items.forEach((item) => item.classList.add("visible"));
+}
