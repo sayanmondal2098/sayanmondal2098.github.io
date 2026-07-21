@@ -1,0 +1,123 @@
+.blog-section {
+    background: #ece9e2
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px
+}
+
+.blog-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+    padding: 30px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #dfddd6;
+    overflow: hidden
+}
+
+.blog-card:before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 5px;
+    background: linear-gradient(90deg, #7867e7, #6ee7f2)
+}
+
+.blog-card:nth-child(2):before {
+    background: linear-gradient(90deg, #6ee7f2, #c5f36d)
+}
+
+.blog-card:nth-child(3):before {
+    background: linear-gradient(90deg, #c5f36d, #7867e7)
+}
+
+.blog-number {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    font: 800 50px/1 var(--display);
+    color: #09111f0d
+}
+
+.blog-meta {
+    position: relative;
+    margin: 20px 0 45px;
+    color: #6655dd;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em
+}
+
+.blog-card h3 {
+    position: relative;
+    margin: 0;
+    font: 700 24px/1.25 var(--display);
+    letter-spacing: -.035em
+}
+
+.blog-card>p:not(.blog-meta) {
+    color: var(--muted);
+    font-size: 14px
+}
+
+.blog-card a {
+    margin-top: auto;
+    color: #5846c5;
+    font-size: 13px;
+    font-weight: 700
+}
+
+.blog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 22px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background: #fff
+}
+
+.blog-footer span {
+    color: var(--muted);
+    font-size: 14px
+}
+
+@media(max-width:950px) {
+    .blog-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .blog-card:last-child {
+        grid-column: 1/-1
+    }
+}
+
+@media(max-width:650px) {
+    .blog-grid {
+        grid-template-columns: 1fr
+    }
+
+    .blog-card:last-child {
+        grid-column: auto
+    }
+
+    .blog-card {
+        min-height: 320px
+    }
+
+    .blog-footer {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .blog-footer .button {
+        width: 100%
+    }
+}
