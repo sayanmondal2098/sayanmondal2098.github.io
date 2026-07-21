@@ -1,21 +1,35 @@
-The MIT License (MIT)
+MIT License
 
-Copyright (c) 2013-2019 Blackrock Digital LLC
+Copyright (c) 2026 Sayan Mondal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
+of the original software source code in this repository (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Scope and exclusions
+
+This MIT License applies only to original website source code authored for this
+portfolio. Unless separately stated, it does not grant rights to:
+
+- personal text, biography, résumé/CV, research descriptions, or other content;
+- publication manuscripts, abstracts, figures, datasets, or supplementary work;
+- photographs, portraits, illustrations, institutional marks, or logos;
+- files under `vendor/` or other third-party material.
+
+Those materials remain copyright of Sayan Mondal, their respective authors,
+publishers, institutions, or licensors, and are used subject to their own terms.
+Bibliographic metadata and BibTeX records are provided for citation convenience.

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../css/site.css" />
     <link rel="stylesheet" href="../css/research.css" />
     <script defer src="../js/site.js"></script>
+    <script defer src="../js/citations.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -126,7 +127,7 @@
       >
         <div><strong>5</strong><span>publications</span></div>
         <div><strong>2026</strong><span>latest publication</span></div>
-        <div><strong>4</strong><span>research themes</span></div>
+        <div><strong>5</strong><span>research themes</span></div>
         <p>
           For live citation counts and citation exports, see my
           <a
@@ -146,6 +147,11 @@
             ><span>Trustworthy AI</span><span>NLP & embeddings</span
             ><span>Intelligent infrastructure</span>
           </div>
+          <p class="publication-guide">
+            <strong>How the labels work:</strong> “Peer reviewed” describes the
+            scholarly evaluation process, while “conference paper” describes
+            where the work was published. A publication can be both.
+          </p>
         </div>
 
         <article class="paper-card paper-featured reveal">
@@ -194,6 +200,19 @@
                 >
               </div>
             </div>
+            <div class="citation-actions">
+              <span>Cite this work</span>
+              <a href="../citations/mondal2026cairn.bib" download
+                >Download BibTeX ↓</a
+              ><button
+                class="citation-copy"
+                type="button"
+                data-copy-citation="cairn"
+                data-title="CAIRN"
+              >
+                Copy citation
+              </button>
+            </div>
             <div class="paper-links">
               <a
                 href="https://doi.org/10.1145/3779208.3804893"
@@ -218,7 +237,7 @@
               >
             </div>
           </div>
-          <span class="paper-type">Peer reviewed</span>
+          <span class="paper-type">Peer-reviewed poster paper</span>
         </article>
 
         <article class="paper-card reveal">
@@ -266,6 +285,19 @@
                 >
               </div>
             </div>
+            <div class="citation-actions">
+              <span>Cite this work</span>
+              <a href="../citations/gayen2026entrourl.bib" download
+                >Download BibTeX ↓</a
+              ><button
+                class="citation-copy"
+                type="button"
+                data-copy-citation="entrourl"
+                data-title="EntroURL-Bench"
+              >
+                Copy citation
+              </button>
+            </div>
             <div class="paper-links">
               <a
                 href="https://doi.org/10.1145/3796563.3796574"
@@ -295,7 +327,7 @@
               >
             </div>
           </div>
-          <span class="paper-type">Peer reviewed</span>
+          <span class="paper-type">Peer-reviewed conference paper</span>
         </article>
 
         <article class="paper-card reveal">
@@ -343,6 +375,19 @@
                 >
               </div>
             </div>
+            <div class="citation-actions">
+              <span>Cite this work</span>
+              <a href="../citations/banerjee2020railway.bib" download
+                >Download BibTeX ↓</a
+              ><button
+                class="citation-copy"
+                type="button"
+                data-copy-citation="railway"
+                data-title="Global Positioning System Based Automated Railway Level Crossing"
+              >
+                Copy citation
+              </button>
+            </div>
             <div class="paper-links">
               <a
                 href="https://doi.org/10.1109/ICCECE48148.2020.9223092"
@@ -362,7 +407,7 @@
               >
             </div>
           </div>
-          <span class="paper-type">Conference paper</span>
+          <span class="paper-type">Peer-reviewed conference paper</span>
         </article>
 
         <article class="paper-card reveal">
@@ -406,6 +451,19 @@
                   remedies.</span
                 >
               </div>
+            </div>
+            <div class="citation-actions">
+              <span>Cite this work</span>
+              <a href="../citations/chakraborty2020dimensionality.bib" download
+                >Download BibTeX ↓</a
+              ><button
+                class="citation-copy"
+                type="button"
+                data-copy-citation="dimensionality"
+                data-title="Dimensionality Reduction technical report"
+              >
+                Copy citation
+              </button>
             </div>
             <div class="paper-links">
               <a
@@ -462,6 +520,19 @@
                 >
               </div>
             </div>
+            <div class="citation-actions">
+              <span>Cite this work</span>
+              <a href="../citations/mondal2017streetlight.bib" download
+                >Download BibTeX ↓</a
+              ><button
+                class="citation-copy"
+                type="button"
+                data-copy-citation="streetlight"
+                data-title="Smart Street Light Control System"
+              >
+                Copy citation
+              </button>
+            </div>
             <div class="paper-links">
               <a
                 href="https://doi.org/10.13140/RG.2.2.13803.16167"
@@ -483,6 +554,13 @@
           </div>
           <span class="paper-type">Preprint</span>
         </article>
+        <div
+          id="citation-status"
+          class="citation-toast"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
       </section>
       <section class="citation-note">
         <div class="wrap reveal">
@@ -491,8 +569,9 @@
             <h2>Track the research.</h2>
           </div>
           <p>
-            Google Scholar provides current citation counts, related articles,
-            and export formats such as BibTeX, EndNote, RefMan, and RefWorks.
+            Every publication above now includes a verified BibTeX download and
+            a one-click citation-copy action. Google Scholar remains available
+            for live citation counts and additional export formats.
           </p>
           <a
             class="button button-light"

@@ -1,0 +1,49 @@
+Your portfolio already covers experience, education, publications, writing, résumé, and profiles. The highest-value additions would be:
+Selected Projects / Case Studies
+Add 3–5 substantial projects with:
+Business problem
+Your architectural decisions
+Technology stack
+System diagram
+Security and scalability considerations
+Measurable outcome
+GitHub or demo link where permitted
+
+Research Projects
+Create detailed pages for CAIRN and EntroURL-Bench, including methodology, architecture diagrams, datasets, results, DOI, citation, slides, and related code.
+
+Talks and Presentations
+Include conference posters, technical talks, webinars, workshops, and presentation slides.
+
+Certifications
+Particularly valuable for your profile:
+ServiceNow certifications
+Cloud and AWS certifications
+Architecture certifications
+AI/ML and cybersecurity credentials
+
+Awards and Recognition
+Add academic awards, professional recognition, conference acceptance highlights, scholarships, and notable achievements.
+
+Downloadable Citation Support
+Provide BibTeX and citation-copy buttons for every paper.
+
+Professional Contact Page
+A clean contact page with email, LinkedIn, ORCID, Google Scholar, availability, and areas open for collaboration—without restoring the old archived contact form.
+
+Architecture Portfolio
+Add anonymized diagrams demonstrating:
+Enterprise integration
+GenAI/RAG architecture
+ServiceNow workflows
+Secure cloud architecture
+Agentic AI systems
+Observability and governance
+
+Latest Activity Section
+Automatically display recent publications, articles, conference activity, and professional milestones.
+
+Testimonials or Recommendations
+   Add two or three concise recommendations from colleagues, managers, research supervisors, or collaborators—with permission.
+
+My recommended next priority is a Projects and Case Studies page. It would provide the strongest evidence behind the “Solution Architect and AI researcher” positioning rather than only describing your capabilities.
