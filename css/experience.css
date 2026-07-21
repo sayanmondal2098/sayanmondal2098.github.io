@@ -1,0 +1,124 @@
+.career-summary {
+    display: grid;
+    grid-template-columns: 130px 130px 190px 1fr;
+    gap: 28px;
+    align-items: center;
+    margin-bottom: 55px;
+    padding: 24px 28px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #e5e3dd
+}
+
+.career-summary div {
+    display: flex;
+    flex-direction: column
+}
+
+.career-summary strong {
+    font-family: var(--display);
+    font-size: 24px;
+    line-height: 1.15
+}
+
+.career-summary span {
+    color: var(--muted);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-top: 5px
+}
+
+.career-summary p {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0
+}
+
+.experience-item {
+    grid-template-columns: 220px 1fr 60px;
+    padding: 48px 0
+}
+
+.experience-item .timeline-date {
+    display: flex;
+    flex-direction: column
+}
+
+.experience-item .timeline-date small {
+    color: var(--muted);
+    font-weight: 500;
+    margin-top: 5px
+}
+
+.role-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.role-status {
+    height: max-content;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #dcf9ea;
+    color: #16764d;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700
+}
+
+.experience-item>div:nth-child(2)>p {
+    margin: 15px 0;
+    color: var(--muted)
+}
+
+.experience-item ul {
+    margin: 20px 0;
+    padding-left: 19px;
+    color: #364153;
+    font-size: 15px
+}
+
+.experience-item li+li {
+    margin-top: 8px
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px
+}
+
+.tech-list span {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #ebe8ff;
+    color: #5846c5;
+    font-size: 11px;
+    font-weight: 700
+}
+
+@media(max-width:850px) {
+    .career-summary {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .career-summary p {
+        grid-column: 1/-1
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr
+    }
+
+    .role-heading {
+        align-items: flex-start
+    }
+
+    .experience-item .index {
+        display: none
+    }
+}

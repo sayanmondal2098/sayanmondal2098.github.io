@@ -1,1 +1,128 @@
-.education-section .education-grid{align-items:stretch}.education-section .edu-card{display:flex;flex-direction:column;min-height:470px}.education-section .edu-card h3{margin:36px 0 5px}.education-section .edu-card>p:not(.institution){font-weight:700;color:#6655dd;margin:0}.education-section .institution{margin:7px 0 22px;font-size:14px;font-weight:600}.education-section .edu-card ul{margin:auto 0 0;padding:20px 0 0 18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}.education-section .edu-card li+li{margin-top:10px}.academic-link{display:flex;align-items:center;gap:25px;margin-top:24px;padding:24px 28px;background:#fff;border:1px solid #e5e3dd;border-radius:16px}.academic-link div{display:flex;flex-direction:column;margin-right:auto}.academic-link span{color:var(--muted);font-size:13px}.academic-link .text-link{white-space:nowrap}@media(max-width:850px){.education-section .edu-card{min-height:0}.academic-link{align-items:flex-start;flex-direction:column}.academic-link div{margin-right:0}.academic-link .button{width:100%}}
+.education-section .education-grid {
+    align-items: stretch
+}
+
+.education-section .edu-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 520px
+}
+
+.edu-logo {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line)
+}
+
+.edu-logo img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 45px;
+    object-fit: contain;
+    object-position: left center;
+    transition: transform .2s
+}
+
+.edu-logo:hover img {
+    transform: translateY(-2px)
+}
+
+.edu-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px
+}
+
+.edu-meta>span:first-child {
+    color: #6655dd;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.degree-badge {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #ebe8ff;
+    color: #5846c5;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.education-section .edu-card h3 {
+    margin: 22px 0 5px
+}
+
+.education-section .edu-card>p:not(.institution) {
+    font-weight: 700;
+    color: #6655dd;
+    margin: 0
+}
+
+.education-section .institution {
+    margin: 7px 0 22px;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.education-section .edu-card ul {
+    margin: auto 0 0;
+    padding: 20px 0 0 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px
+}
+
+.education-section .edu-card li+li {
+    margin-top: 10px
+}
+
+.academic-link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 24px;
+    padding: 24px 28px;
+    background: #fff;
+    border: 1px solid #e5e3dd;
+    border-radius: 16px
+}
+
+.academic-link div {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto
+}
+
+.academic-link span {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.academic-link .text-link {
+    white-space: nowrap
+}
+
+@media(max-width:850px) {
+    .education-section .edu-card {
+        min-height: 0
+    }
+
+    .academic-link {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .academic-link div {
+        margin-right: 0
+    }
+
+    .academic-link .button {
+        width: 100%
+    }
+}
