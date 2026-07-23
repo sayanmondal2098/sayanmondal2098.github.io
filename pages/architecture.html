@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="An anonymized architecture portfolio by Sayan Mondal covering enterprise integration, GenAI/RAG, ServiceNow workflows, secure cloud architecture, agentic AI systems, and observability governance."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <link
+      rel="icon"
+      href="../img/branding/favicon.svg?v=5"
+      type="image/svg+xml"
+    />
+    <title>Architecture Portfolio - Sayan Mondal</title>
+    <link
+      rel="canonical"
+      href="https://sayanmondal2098.github.io/pages/architecture.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/architecture.css" />
+    <script defer src="../js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#work">Work</a
+          ><a href="../index.html#research">Research</a
+          ><a href="projects.html">Projects</a
+          ><a href="architecture.html" aria-current="page">Architecture</a
+          ><a href="papers.html">Papers</a
+          ><a class="button button-small" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <p class="kicker">Architecture portfolio</p>
+        <h1>Anonymized diagrams for enterprise-scale thinking.</h1>
+        <p>
+          Reference architectures that show how I reason about integration,
+          AI-assisted delivery, ServiceNow workflows, secure cloud foundations,
+          agentic systems, and governance. They are intentionally vendor-neutral
+          and anonymized.
+        </p>
+        <div class="profile-actions">
+          <a class="button" href="#integration">Integration</a
+          ><a class="button button-outline" href="#rag">GenAI/RAG</a
+          ><a class="button button-outline" href="#servicenow">ServiceNow</a
+          ><a class="button button-outline" href="#cloud">Secure cloud</a>
+        </div>
+      </section>
+
+      <section class="architecture-note wrap reveal">
+        <strong>Anonymized by design</strong>
+        <p>
+          These diagrams demonstrate architecture patterns, not proprietary
+          client systems. Names, data flows, vendors, and operational details
+          are generalized for public sharing.
+        </p>
+      </section>
+
+      <section class="architecture-list wrap">
+        <article class="architecture-card reveal" id="integration">
+          <div class="architecture-copy">
+            <p class="case-type">Enterprise integration</p>
+            <h2>API-led integration across enterprise systems</h2>
+            <p>
+              A pattern for connecting business applications through governed
+              APIs, event streams, transformation services, and observability
+              layers without hard-coding every system-to-system dependency.
+            </p>
+            <ul>
+              <li>Canonical integration contracts and versioned APIs.</li>
+              <li>Async events for operational resilience and decoupling.</li>
+              <li>Centralized logging, tracing, policy checks, and alerts.</li>
+            </ul>
+          </div>
+          <div
+            class="architecture-diagram integration-diagram"
+            aria-label="Enterprise integration architecture diagram"
+          >
+            <span>CRM / Portal</span><span>API gateway</span
+            ><span>Integration services</span><span>Event bus</span
+            ><span>ERP / ITSM / Data</span><span>Monitoring & policy</span>
+          </div>
+        </article>
+
+        <article class="architecture-card reveal" id="rag">
+          <div class="architecture-copy">
+            <p class="case-type">GenAI/RAG architecture</p>
+            <h2>Retrieval-grounded enterprise assistant</h2>
+            <p>
+              A governed RAG flow for knowledge-heavy enterprise use cases,
+              balancing retrieval quality, prompt safety, access control,
+              citation traceability, and human escalation.
+            </p>
+            <ul>
+              <li>
+                Document ingestion with chunking, metadata, and embeddings.
+              </li>
+              <li>Policy-aware retrieval before model generation.</li>
+              <li>
+                Grounded responses with citations, review, and feedback loops.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="architecture-diagram rag-diagram"
+            aria-label="GenAI RAG architecture diagram"
+          >
+            <span>Knowledge sources</span><span>Ingestion pipeline</span
+            ><span>Vector index</span><span>Retriever</span
+            ><span>LLM + guardrails</span><span>User / reviewer</span>
+          </div>
+        </article>
+
+        <article class="architecture-card reveal" id="servicenow">
+          <div class="architecture-copy">
+            <p class="case-type">ServiceNow workflows</p>
+            <h2>Enterprise service workflow modernization</h2>
+            <p>
+              A ServiceNow-oriented workflow pattern for turning request intake
+              into governed routing, approval, fulfillment, integration, and
+              continuous improvement.
+            </p>
+            <ul>
+              <li>Role-aware request intake and SLA-aware routing.</li>
+              <li>Approval and fulfillment paths with integration hooks.</li>
+              <li>Knowledge capture and reporting for operational maturity.</li>
+            </ul>
+          </div>
+          <div
+            class="architecture-diagram workflow-diagram"
+            aria-label="ServiceNow workflow architecture diagram"
+          >
+            <span>Request intake</span><span>Catalog / workflow</span
+            ><span>Approval policy</span><span>Fulfillment team</span
+            ><span>External systems</span><span>Reports / knowledge</span>
+          </div>
+        </article>
+
+        <article class="architecture-card reveal" id="cloud">
+          <div class="architecture-copy">
+            <p class="case-type">Secure cloud architecture</p>
+            <h2>Cloud landing zone with defense-in-depth</h2>
+            <p>
+              A secure cloud foundation pattern that separates identity,
+              networking, application runtime, data services, secrets,
+              monitoring, and compliance controls.
+            </p>
+            <ul>
+              <li>
+                Network segmentation, private subnets, and controlled ingress.
+              </li>
+              <li>
+                Identity-first access, secrets management, and encryption.
+              </li>
+              <li>
+                Runtime monitoring, vulnerability signals, and audit evidence.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="architecture-diagram cloud-diagram"
+            aria-label="Secure cloud architecture diagram"
+          >
+            <span>Users / SSO</span><span>Edge / WAF</span
+            ><span>Private app tier</span><span>Data services</span
+            ><span>Secrets & IAM</span><span>Security monitoring</span>
+          </div>
+        </article>
+
+        <article class="architecture-card reveal" id="agentic-ai">
+          <div class="architecture-copy">
+            <p class="case-type">Agentic AI systems</p>
+            <h2>Multi-agent delivery orchestration</h2>
+            <p>
+              A controlled agentic AI pattern where specialized agents plan,
+              retrieve, generate, validate, and report, while shared governance
+              prevents untraceable automation.
+            </p>
+            <ul>
+              <li>
+                Planner, researcher, builder, validator, and reviewer roles.
+              </li>
+              <li>Shared memory, tool policies, and approval boundaries.</li>
+              <li>Evaluation gates before committing generated outputs.</li>
+            </ul>
+          </div>
+          <div
+            class="architecture-diagram agentic-diagram"
+            aria-label="Agentic AI system architecture diagram"
+          >
+            <span>Goal / backlog</span><span>Planner agent</span
+            ><span>Tool-enabled agents</span><span>Validation harness</span
+            ><span>Human approval</span><span>Delivery artifacts</span>
+          </div>
+        </article>
+
+        <article class="architecture-card reveal" id="governance">
+          <div class="architecture-copy">
+            <p class="case-type">Observability and governance</p>
+            <h2>Operating model for reliable AI-enabled systems</h2>
+            <p>
+              A governance pattern that connects telemetry, audit trails,
+              quality evaluation, risk signals, incident response, and executive
+              reporting for production-grade systems.
+            </p>
+            <ul>
+              <li>
+                Metrics, logs, traces, prompts, and model-output auditing.
+              </li>
+              <li>
+                Policy checks for data access, security, and quality drift.
+              </li>
+              <li>Incident response and improvement loops tied to evidence.</li>
+            </ul>
+          </div>
+          <div
+            class="architecture-diagram governance-diagram"
+            aria-label="Observability and governance architecture diagram"
+          >
+            <span>Telemetry</span><span>Audit trail</span
+            ><span>Quality evaluation</span><span>Risk controls</span
+            ><span>Incident loop</span><span>Governance dashboard</span>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="../index.html">Home</a><a href="projects.html">Projects</a
+          ><a href="architecture.html" aria-current="page">Architecture</a
+          ><a href="papers.html">Papers</a><a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>

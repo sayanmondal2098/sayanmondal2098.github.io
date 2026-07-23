@@ -25,11 +25,7 @@ AI/ML and cybersecurity credentials
 Awards and Recognition
 Add academic awards, professional recognition, conference acceptance highlights, scholarships, and notable achievements.
 
-Downloadable Citation Support
-Provide BibTeX and citation-copy buttons for every paper.
 
-Professional Contact Page
-A clean contact page with email, LinkedIn, ORCID, Google Scholar, availability, and areas open for collaboration—without restoring the old archived contact form.
 
 Architecture Portfolio
 Add anonymized diagrams demonstrating:

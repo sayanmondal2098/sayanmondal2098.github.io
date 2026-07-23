@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Selected projects and case studies by Sayan Mondal across enterprise AI, ServiceNow, cybersecurity research, and trustworthy machine learning."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <link
+      rel="icon"
+      href="../img/branding/favicon.svg?v=5"
+      type="image/svg+xml"
+    />
+    <title>Projects & Case Studies - Sayan Mondal</title>
+    <link
+      rel="canonical"
+      href="https://sayanmondal2098.github.io/pages/projects.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <script defer src="../js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#work">Work</a
+          ><a href="../index.html#research">Research</a
+          ><a href="projects.html" aria-current="page">Projects</a
+          ><a href="architecture.html">Architecture</a
+          ><a href="../index.html#education">Education</a
+          ><a href="papers.html">Papers</a><a href="../index.html#blog">Blog</a
+          ><a class="button button-small" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <p class="kicker">Projects & case studies</p>
+        <h1>Architecture stories with enough detail to be useful.</h1>
+        <p>
+          A selected set of enterprise, research, and platform projects showing
+          the business problem, architecture choices, technology stack, system
+          flow, security and scalability thinking, and public links where
+          permitted.
+        </p>
+        <div class="profile-actions">
+          <a class="button" href="#agentic-ai">Enterprise AI</a
+          ><a class="button button-outline" href="#servicenow">ServiceNow</a
+          ><a class="button button-outline" href="#cairn">CAIRN</a
+          ><a class="button button-outline" href="#entrourl">EntroURL-Bench</a
+          ><a class="button button-outline" href="architecture.html"
+            >Architecture Portfolio</a
+          >
+        </div>
+      </section>
+
+      <section
+        class="research-summary wrap reveal"
+        aria-label="Project overview"
+      >
+        <div><strong>4</strong><span>case studies</span></div>
+        <div><strong>2</strong><span>enterprise cases</span></div>
+        <div><strong>2</strong><span>research cases</span></div>
+        <p>
+          Enterprise delivery details are intentionally anonymized where project
+          data, customer context, demos, or production metrics are private.
+        </p>
+      </section>
+
+      <section class="section wrap projects-section projects-page">
+        <div class="case-study-list">
+          <article class="case-study reveal" id="agentic-ai">
+            <div class="case-study-head">
+              <p class="case-type">Enterprise AI architecture</p>
+              <h2>Agentic AI delivery workflow for enterprise software</h2>
+              <p>
+                Built around slow enterprise implementation cycles, fragmented
+                requirements, manual documentation, and repeated handoffs across
+                discovery, specification, configuration, development,
+                validation, and testing.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Business problem</strong>
+                <p>
+                  Delivery teams lose context between business discovery,
+                  technical specification, configuration, generated artifacts,
+                  validation, and testing. That creates repeated clarification
+                  loops and weak traceability from requirement to shipped work.
+                </p>
+              </div>
+              <div>
+                <strong>Technology stack</strong>
+                <div class="tech-list">
+                  <span>Agentic AI</span><span>RAG</span><span>ServiceNow</span
+                  ><span>Python</span><span>LLM guardrails</span
+                  ><span>Test automation</span><span>SaaS integrations</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Architectural decisions</strong>
+                <ul>
+                  <li>
+                    Split the workflow into specialized discovery, developer,
+                    decision, validation, and testing agent responsibilities.
+                  </li>
+                  <li>
+                    Used enterprise knowledge retrieval so specifications and
+                    generated artifacts stay traceable to source context.
+                  </li>
+                  <li>
+                    Added human review points for governance-sensitive outputs.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <strong>Security and scalability considerations</strong>
+                <ul>
+                  <li>Scoped data access and traceable retrieval grounding.</li>
+                  <li>Audit trails for agent-generated artifacts.</li>
+                  <li>Reusable agent patterns for multiple SaaS workflows.</li>
+                  <li>
+                    Review gates for high-risk or customer-facing changes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="system-diagram"
+              aria-label="Agentic AI workflow diagram"
+            >
+              <span>Business inputs</span><span>Knowledge layer</span
+              ><span>Agent orchestration</span><span>ServiceNow / SaaS</span
+              ><span>Validation & testing</span>
+            </div>
+            <div class="case-footer">
+              <p>
+                <strong>Outcome:</strong> designed a reusable workflow covering
+                6 enterprise delivery stages; production metrics are internal.
+              </p>
+              <span>Demo/link: private enterprise work</span>
+            </div>
+          </article>
+
+          <article class="case-study reveal" id="servicenow">
+            <div class="case-study-head">
+              <p class="case-type">Platform engineering</p>
+              <h2>ServiceNow solution design and R&amp;D enablement</h2>
+              <p>
+                Supported enterprise teams that needed clearer platform
+                architecture, stronger RFP solution narratives, and maintainable
+                internal applications across ServiceNow and AI/ML use cases.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Business problem</strong>
+                <p>
+                  Teams needed a bridge between business expectations,
+                  ServiceNow platform capabilities, internal R&amp;D
+                  applications, and implementation-ready technical guidance.
+                </p>
+              </div>
+              <div>
+                <strong>Technology stack</strong>
+                <div class="tech-list">
+                  <span>ServiceNow</span><span>Python</span><span>AI/ML</span
+                  ><span>ITSM</span><span>RFP architecture</span
+                  ><span>Technical training</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Architectural decisions</strong>
+                <ul>
+                  <li>
+                    Converted business requirements into platform workflows,
+                    application structures, and implementation-ready
+                    documentation.
+                  </li>
+                  <li>
+                    Kept reusable architecture patterns separate from
+                    customer-specific configuration.
+                  </li>
+                  <li>
+                    Combined hands-on delivery with mentoring so platform
+                    knowledge did not stay isolated.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <strong>Security and scalability considerations</strong>
+                <ul>
+                  <li>Role-aware workflow and instance governance thinking.</li>
+                  <li>
+                    Reusable design assets for repeated solution patterns.
+                  </li>
+                  <li>Operational documentation for maintainability.</li>
+                  <li>
+                    Clear boundaries between configuration and customization.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="system-diagram"
+              aria-label="ServiceNow solution design diagram"
+            >
+              <span>Business need</span><span>Architecture blueprint</span
+              ><span>ServiceNow workflow</span><span>Integration plan</span
+              ><span>Delivery enablement</span>
+            </div>
+            <div class="case-footer">
+              <p>
+                <strong>Outcome:</strong> contributed across a 4+ year
+                engineering-to-architecture progression; client and RFP metrics
+                are confidential.
+              </p>
+              <span>Demo/link: not public</span>
+            </div>
+          </article>
+
+          <article class="case-study reveal" id="cairn">
+            <div class="case-study-head">
+              <p class="case-type">Cybersecurity research</p>
+              <h2>CAIRN: causal active inference for cyber attack diagnosis</h2>
+              <p>
+                Addressed alert-heavy security operations where correlation
+                alone makes it difficult to explain what is happening, choose
+                safe interventions, and confirm competing attack hypotheses.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Business problem</strong>
+                <p>
+                  IDS and SIEM workflows can produce many alerts without enough
+                  causal clarity. Analysts need interpretable evidence paths and
+                  low-risk ways to confirm or reject competing attack
+                  explanations.
+                </p>
+              </div>
+              <div>
+                <strong>Technology stack</strong>
+                <div class="tech-list">
+                  <span>Bayesian inference</span><span>Causal graphs</span
+                  ><span>Cyber telemetry</span><span>GenAI-assisted CTI</span
+                  ><span>Python</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Architectural decisions</strong>
+                <ul>
+                  <li>
+                    Modeled telemetry as a probabilistic causal evidence graph.
+                  </li>
+                  <li>
+                    Used Bayesian inference to compare attack explanations in
+                    real time.
+                  </li>
+                  <li>
+                    Added an active intervention loop for probes, logging,
+                    decoys, and scoped isolation.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <strong>Security and scalability considerations</strong>
+                <ul>
+                  <li>Low-risk interventions before disruptive response.</li>
+                  <li>Explainable evidence paths for analyst review.</li>
+                  <li>
+                    Scoped response actions tied to uncertainty reduction.
+                  </li>
+                  <li>Graph-based reasoning over evolving telemetry.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="system-diagram" aria-label="CAIRN system diagram">
+              <span>Telemetry</span><span>Causal graph</span
+              ><span>Bayesian diagnosis</span><span>Intervention policy</span
+              ><span>Response decision</span>
+            </div>
+            <div class="case-footer">
+              <p>
+                <strong>Outcome:</strong> peer-reviewed ACM AsiaCCS '26 poster
+                paper with DOI 10.1145/3779208.3804893.
+              </p>
+              <a
+                href="https://doi.org/10.1145/3779208.3804893"
+                target="_blank"
+                rel="noopener"
+                >View DOI ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="case-study reveal" id="entrourl">
+            <div class="case-study-head">
+              <p class="case-type">Trustworthy ML benchmark</p>
+              <h2>EntroURL-Bench for malicious URL detection</h2>
+              <p>
+                Tackled the problem of evaluating malicious-URL classifiers on
+                aging or shallow datasets that do not represent modern phishing,
+                malware, and malicious web behavior well enough.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Business problem</strong>
+                <p>
+                  Security teams and researchers need reliable benchmarks for
+                  malicious URL detection. Weak or outdated datasets make it
+                  harder to compare models, reason about trustworthiness, and
+                  study modern phishing and malware behavior.
+                </p>
+              </div>
+              <div>
+                <strong>Technology stack</strong>
+                <div class="tech-list">
+                  <span>Machine learning</span><span>URL features</span
+                  ><span>Security datasets</span><span>Benchmarking</span
+                  ><span>Trustworthy AI</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Architectural decisions</strong>
+                <ul>
+                  <li>
+                    Focused the benchmark on richer URL representations rather
+                    than only lexical surface features.
+                  </li>
+                  <li>
+                    Framed the dataset around reproducible comparison and model
+                    trustworthiness.
+                  </li>
+                  <li>
+                    Connected the project to broader security-evaluation needs
+                    for phishing and malware detection.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <strong>Security and scalability considerations</strong>
+                <ul>
+                  <li>Consistent benchmark structure for reproducibility.</li>
+                  <li>Feature-rich representation for modern URL analysis.</li>
+                  <li>Extensible evaluation pattern for future research.</li>
+                  <li>
+                    Trustworthiness framing beyond raw classifier accuracy.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="system-diagram"
+              aria-label="EntroURL-Bench system diagram"
+            >
+              <span>Raw URLs</span><span>Feature extraction</span
+              ><span>Benchmark dataset</span><span>Model evaluation</span
+              ><span>Trust analysis</span>
+            </div>
+            <div class="case-footer">
+              <p>
+                <strong>Outcome:</strong> peer-reviewed ISEC 2026 short paper
+                with DOI 10.1145/3796563.3796574.
+              </p>
+              <a
+                href="https://doi.org/10.1145/3796563.3796574"
+                target="_blank"
+                rel="noopener"
+                >View DOI ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="../index.html">Home</a
+          ><a href="projects.html" aria-current="page">Projects</a
+          ><a href="architecture.html">Architecture</a
+          ><a href="papers.html">Papers</a><a href="resume.html">Resume</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>

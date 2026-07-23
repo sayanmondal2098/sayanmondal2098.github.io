@@ -1,12 +1,15 @@
 const assetRoot = window.location.pathname.includes("/pages/") ? "../" : "";
-["css/education.css?v=2", "css/experience.css", "css/blog.css"].forEach(
-  (href) => {
-    const stylesheet = document.createElement("link");
-    stylesheet.rel = "stylesheet";
-    stylesheet.href = assetRoot + href;
-    document.head.appendChild(stylesheet);
-  },
-);
+[
+  "css/education.css?v=2",
+  "css/experience.css",
+  "css/projects.css",
+  "css/blog.css",
+].forEach((href) => {
+  const stylesheet = document.createElement("link");
+  stylesheet.rel = "stylesheet";
+  stylesheet.href = assetRoot + href;
+  document.head.appendChild(stylesheet);
+});
 if (!document.querySelector('link[rel="icon"]')) {
   const favicon = document.createElement("link");
   favicon.rel = "icon";

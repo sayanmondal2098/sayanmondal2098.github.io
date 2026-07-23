@@ -1,0 +1,165 @@
+.architecture-note {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 22px 24px;
+  border: 1px solid #dedbd3;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.architecture-note strong {
+  font-family: var(--display);
+  font-size: 20px;
+}
+
+.architecture-note p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.architecture-list {
+  display: grid;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.architecture-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr);
+  gap: 34px;
+  align-items: center;
+  padding: 34px;
+  border: 1px solid #dfddd6;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(9, 17, 31, 0.06);
+}
+
+.architecture-copy h2 {
+  margin: 8px 0 14px;
+  font-family: var(--display);
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.architecture-copy p:not(.case-type) {
+  color: var(--muted);
+}
+
+.architecture-copy ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  color: #364153;
+  font-size: 15px;
+}
+
+.architecture-copy li + li {
+  margin-top: 7px;
+}
+
+.architecture-diagram {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid #d8d4ee;
+  border-radius: 18px;
+  background:
+    linear-gradient(#ffffffd9, #ffffffd9),
+    repeating-linear-gradient(135deg, #ebe8ff 0 1px, transparent 1px 14px);
+}
+
+.architecture-diagram span {
+  position: relative;
+  display: grid;
+  min-height: 92px;
+  place-items: center;
+  padding: 14px;
+  border: 1px solid #cfc8f2;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.architecture-diagram span:nth-child(2),
+.architecture-diagram span:nth-child(5) {
+  background: #f7f5ff;
+}
+
+.architecture-diagram span:nth-child(3),
+.architecture-diagram span:nth-child(6) {
+  border-color: #bfe8ef;
+  background: #f2fcfd;
+}
+
+.architecture-diagram span:after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  width: 13px;
+  border-top: 2px solid #6655dd;
+}
+
+.architecture-diagram span:nth-child(3):after,
+.architecture-diagram span:nth-child(6):after {
+  display: none;
+}
+
+.cloud-diagram,
+.governance-diagram {
+  border-color: #c8e9dc;
+  background:
+    linear-gradient(#ffffffdb, #ffffffdb),
+    repeating-linear-gradient(135deg, #e6f8ef 0 1px, transparent 1px 14px);
+}
+
+.cloud-diagram span:nth-child(2),
+.cloud-diagram span:nth-child(5),
+.governance-diagram span:nth-child(2),
+.governance-diagram span:nth-child(5) {
+  border-color: #b8e6d1;
+  background: #f3fcf7;
+}
+
+@media (max-width: 950px) {
+  .architecture-note,
+  .architecture-card {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-card {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .architecture-diagram {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-diagram span {
+    min-height: 70px;
+  }
+
+  .architecture-diagram span:after {
+    right: 50%;
+    top: auto;
+    bottom: -13px;
+    height: 13px;
+    border-top: 0;
+    border-left: 2px solid #6655dd;
+  }
+
+  .architecture-diagram span:nth-child(3):after {
+    display: block;
+  }
+}
