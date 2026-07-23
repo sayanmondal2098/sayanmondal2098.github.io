@@ -526,14 +526,15 @@ footer {
   align-items: center;
 }
 
-.footer-grid > div:nth-child(2) {
-  display: flex;
-  gap: 24px;
-}
-
 .footer-grid p {
   font-size: 13px;
   color: #8e98a7;
+}
+
+.footer-grid > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .page-hero {
