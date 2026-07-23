@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="CAIRN research project page by Sayan Mondal: methodology, architecture, dataset context, results, DOI, citation, slides, and related code status."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <link
+      rel="icon"
+      href="../img/branding/favicon.svg?v=5"
+      type="image/svg+xml"
+    />
+    <title>CAIRN Research Project - Sayan Mondal</title>
+    <link
+      rel="canonical"
+      href="https://sayanmondal2098.github.io/pages/research-cairn.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/research-projects.css" />
+    <script defer src="../js/site.js"></script>
+    <script defer src="../js/citations.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#research">Research</a
+          ><a href="projects.html">Projects</a
+          ><a href="architecture.html">Architecture</a
+          ><a href="papers.html">Papers</a
+          ><a class="button button-small" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <p class="kicker">Research project</p>
+        <h1>CAIRN: Causal Active Inference for cyber attack diagnosis.</h1>
+        <p>
+          CAIRN explores how causal evidence graphs, Bayesian inference, and
+          active interventions can help diagnose attacks when passive security
+          telemetry is ambiguous.
+        </p>
+        <div class="profile-actions">
+          <a
+            class="button"
+            href="https://doi.org/10.1145/3779208.3804893"
+            target="_blank"
+            rel="noopener"
+            >DOI 10.1145/3779208.3804893</a
+          ><a
+            class="button button-outline"
+            href="../citations/mondal2026cairn.bib"
+            download
+            >Download BibTeX</a
+          ><button
+            class="button button-outline citation-copy"
+            type="button"
+            data-copy-citation="cairn"
+            data-title="CAIRN"
+          >
+            Copy citation
+          </button>
+        </div>
+      </section>
+
+      <section class="research-project-summary wrap reveal">
+        <div>
+          <strong>Venue</strong><span>ACM AsiaCCS '26 poster paper</span>
+        </div>
+        <div><strong>Pages</strong><span>1919-1921</span></div>
+        <div><strong>Status</strong><span>Peer-reviewed publication</span></div>
+        <p>Authors: Sayan Mondal, Avijit Gayen, and Angshuman Jana.</p>
+      </section>
+
+      <section class="section wrap research-project-body">
+        <article class="research-panel reveal">
+          <p class="case-type">Methodology</p>
+          <h2>Infer first, intervene when evidence is insufficient.</h2>
+          <div class="research-two-col">
+            <div>
+              <strong>Core method</strong>
+              <ul>
+                <li>
+                  Represent security telemetry as a causal evidence graph.
+                </li>
+                <li>
+                  Run Bayesian inference over competing attack explanations.
+                </li>
+                <li>
+                  Select low-risk interventions when passive observations cannot
+                  distinguish likely causes.
+                </li>
+                <li>
+                  Use discriminative observations to update attack diagnosis and
+                  response confidence.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <strong>Why it matters</strong>
+              <p>
+                Correlation-heavy IDS and SIEM workflows can overload analysts
+                with alerts while leaving causal uncertainty unresolved. CAIRN
+                adds an infer-and-verify loop to make response decisions more
+                explainable.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Architecture diagram</p>
+          <h2>CAIRN diagnosis and response loop</h2>
+          <div class="research-architecture">
+            <span>Enterprise telemetry</span><span>Evidence graph</span
+            ><span>Bayesian diagnosis</span><span>Intervention selector</span
+            ><span>Focused probe / logging / decoy</span
+            ><span>Updated response decision</span>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Datasets and evaluation</p>
+          <h2>Telemetry-driven testbed evaluation.</h2>
+          <div class="resource-grid">
+            <div>
+              <strong>Dataset context</strong>
+              <p>
+                The evaluation uses the CTI-HAL threat-intelligence corpus,
+                described in the paper as 57 reported attacks from 7 major
+                threat-actor groups with 3,677 extracted entity instances. The
+                split reserves 70% for evidence-graph modeling and 30% for
+                validation/testing.
+              </p>
+            </div>
+            <div>
+              <strong>Results summary</strong>
+              <p>
+                In the reported testbed, CAIRN reaches 0.937 precision, 0.951
+                recall, 0.944 F1, 6.24 mean time-to-confirmation, and 43 total
+                false positives, outperforming the TF-IDF and sentence-embedding
+                IDS baselines shown in the paper.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Artifacts</p>
+          <h2>DOI, citation, slides, and code.</h2>
+          <div class="artifact-grid">
+            <a
+              href="https://doi.org/10.1145/3779208.3804893"
+              target="_blank"
+              rel="noopener"
+              ><strong>DOI</strong><span>Published DOI record</span></a
+            ><a href="../citations/mondal2026cairn.bib" download
+              ><strong>BibTeX</strong><span>Download citation file</span></a
+            ><span><strong>Slides</strong><em>Not public yet</em></span
+            ><span><strong>Related code</strong><em>Not public yet</em></span>
+          </div>
+        </article>
+        <div
+          id="citation-status"
+          class="citation-toast"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="papers.html">Papers</a
+          ><a href="research-entrourl.html">EntroURL-Bench</a
+          ><a href="projects.html">Projects</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>

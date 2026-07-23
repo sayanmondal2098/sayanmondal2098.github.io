@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="EntroURL-Bench research project page by Sayan Mondal: methodology, architecture, dataset context, results, DOI, citation, slides, and related code status."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <link
+      rel="icon"
+      href="../img/branding/favicon.svg?v=5"
+      type="image/svg+xml"
+    />
+    <title>EntroURL-Bench Research Project - Sayan Mondal</title>
+    <link
+      rel="canonical"
+      href="https://sayanmondal2098.github.io/pages/research-entrourl.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/research-projects.css" />
+    <script defer src="../js/site.js"></script>
+    <script defer src="../js/citations.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#research">Research</a
+          ><a href="projects.html">Projects</a
+          ><a href="architecture.html">Architecture</a
+          ><a href="papers.html">Papers</a
+          ><a class="button button-small" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <p class="kicker">Research project</p>
+        <h1>EntroURL-Bench: trustworthy malicious URL detection.</h1>
+        <p>
+          EntroURL-Bench is a feature-rich benchmark dataset project for
+          evaluating malicious URL detection methods across modern phishing,
+          malware, and malicious-web analysis.
+        </p>
+        <div class="profile-actions">
+          <a
+            class="button"
+            href="https://doi.org/10.1145/3796563.3796574"
+            target="_blank"
+            rel="noopener"
+            >DOI 10.1145/3796563.3796574</a
+          ><a
+            class="button button-outline"
+            href="../citations/gayen2026entrourl.bib"
+            download
+            >Download BibTeX</a
+          ><button
+            class="button button-outline citation-copy"
+            type="button"
+            data-copy-citation="entrourl"
+            data-title="EntroURL-Bench"
+          >
+            Copy citation
+          </button>
+        </div>
+      </section>
+
+      <section class="research-project-summary wrap reveal">
+        <div><strong>Venue</strong><span>ISEC 2026 research track</span></div>
+        <div><strong>Type</strong><span>Short paper</span></div>
+        <div><strong>Status</strong><span>Peer-reviewed publication</span></div>
+        <p>
+          Authors: Avijit Gayen, Sayan Mondal, Khokan Mondal, and Angshuman
+          Jana.
+        </p>
+      </section>
+
+      <section class="section wrap research-project-body">
+        <article class="research-panel reveal">
+          <p class="case-type">Methodology</p>
+          <h2>Build a richer benchmark before trusting the classifier.</h2>
+          <div class="research-two-col">
+            <div>
+              <strong>Core method</strong>
+              <ul>
+                <li>
+                  Collect and represent URL samples for malicious URL study.
+                </li>
+                <li>
+                  Emphasize richer feature representation beyond shallow lexical
+                  signals.
+                </li>
+                <li>
+                  Use cleaning, canonicalization, and large-scale web scraping
+                  to capture richer website context.
+                </li>
+                <li>
+                  Support reproducible evaluation across phishing, malware, and
+                  malicious web patterns.
+                </li>
+                <li>
+                  Frame evaluation around trustworthy comparison, not only raw
+                  model accuracy.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <strong>Why it matters</strong>
+              <p>
+                URL classifiers can appear strong when datasets are old, narrow,
+                or too shallow. EntroURL-Bench focuses on a benchmark structure
+                that better supports modern malicious-web evaluation.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Architecture diagram</p>
+          <h2>Benchmark construction and evaluation flow</h2>
+          <div class="research-architecture">
+            <span>Seed URL dataset</span><span>Cleaning & canonicalization</span
+            ><span>Web scraping</span
+            ><span>Structural / semantic / entropy features</span
+            ><span>Benchmark dataset</span><span>Trustworthy evaluation</span>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Datasets and results</p>
+          <h2>Feature-rich malicious URL benchmark.</h2>
+          <div class="resource-grid">
+            <div>
+              <strong>Dataset context</strong>
+              <p>
+                The project centers on a benchmark dataset for malicious URL
+                detection. The ISEC abstract describes enrichment with
+                structural, semantic, and entropy-based features, including
+                internal/external hyperlinks, text entropy, and keyword
+                distributions. A public dataset repository link has not been
+                added because no permitted public URL is available in the repo.
+              </p>
+            </div>
+            <div>
+              <strong>Results summary</strong>
+              <p>
+                The ISEC 2026 program lists the work as a short paper in the
+                Research Papers track, scheduled in Research Session 3: Software
+                Evolution. The page positions EntroURL-Bench as a reproducible
+                feature-rich benchmark for trustworthy malicious URL detection.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Artifacts</p>
+          <h2>DOI, citation, slides, dataset, and code.</h2>
+          <div class="artifact-grid">
+            <a
+              href="https://doi.org/10.1145/3796563.3796574"
+              target="_blank"
+              rel="noopener"
+              ><strong>DOI</strong><span>Published DOI record</span></a
+            ><a href="../citations/gayen2026entrourl.bib" download
+              ><strong>BibTeX</strong><span>Download citation file</span></a
+            ><a
+              href="https://conf.researchr.org/details/isec-2026/isec-2026-research-papers/17/EntroURL-Bench-A-Feature-Rich-Benchmark-Dataset-for-Trustworthy-Malicious-URL-Detect"
+              target="_blank"
+              rel="noopener"
+              ><strong>Conference record</strong
+              ><span>ISEC 2026 listing</span></a
+            ><span><strong>Dataset/code</strong><em>Not public yet</em></span
+            ><span><strong>Slides</strong><em>Not public yet</em></span>
+          </div>
+        </article>
+        <div
+          id="citation-status"
+          class="citation-toast"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="papers.html">Papers</a><a href="research-cairn.html">CAIRN</a
+          ><a href="projects.html">Projects</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>
