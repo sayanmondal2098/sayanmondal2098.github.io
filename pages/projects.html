@@ -49,7 +49,7 @@
           ><a href="projects.html" aria-current="page">Projects</a
           ><a href="architecture.html">Architecture</a
           ><a href="../index.html#education">Education</a
-          ><a href="papers.html">Papers</a><a href="../index.html#blog">Blog</a
+          ><a href="../research/">Papers</a><a href="../index.html#blog">Blog</a
           ><a class="button button-small" href="contact.html">Contact</a>
         </div>
       </nav>
@@ -67,6 +67,7 @@
         <div class="profile-actions">
           <a class="button" href="#agentic-ai">Enterprise AI</a
           ><a class="button button-outline" href="#servicenow">ServiceNow</a
+          ><a class="button button-outline" href="#sinmuli">SiNMULI</a
           ><a class="button button-outline" href="#cairn">CAIRN</a
           ><a class="button button-outline" href="#entrourl">EntroURL-Bench</a
           ><a class="button button-outline" href="architecture.html"
@@ -79,9 +80,9 @@
         class="research-summary wrap reveal"
         aria-label="Project overview"
       >
-        <div><strong>4</strong><span>case studies</span></div>
+        <div><strong>5</strong><span>case studies</span></div>
         <div><strong>2</strong><span>enterprise cases</span></div>
-        <div><strong>2</strong><span>research cases</span></div>
+        <div><strong>3</strong><span>research cases</span></div>
         <p>
           Enterprise delivery details are intentionally anonymized where project
           data, customer context, demos, or production metrics are private.
@@ -245,6 +246,89 @@
             </div>
           </article>
 
+          <article class="case-study reveal" id="sinmuli">
+            <div class="case-study-head">
+              <p class="case-type">Latest cybersecurity research · arXiv 2026</p>
+              <h2>SiNMULI: signed-network malicious URL identification</h2>
+              <p>
+                Reframed malicious URL identification as structural inference
+                over the web’s hyperlink relationships, creating an
+                interpretable alternative to blacklists and opaque learned
+                classifiers.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Research problem</strong>
+                <p>
+                  Static lists miss new threats, while lexical and content-based
+                  models can depend on labeled data and signals that attackers
+                  can alter. The project asks whether trust and distrust patterns
+                  between linked sites can expose malicious domains.
+                </p>
+              </div>
+              <div>
+                <strong>Technology stack</strong>
+                <div class="tech-list">
+                  <span>Signed networks</span><span>Graph theory</span
+                  ><span>Social balance theory</span><span>Web crawling</span
+                  ><span>Python</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Architectural decisions</strong>
+                <ul>
+                  <li>
+                    Modeled websites as nodes and hyperlinks as directed signed
+                    edges.
+                  </li>
+                  <li>
+                    Used strong and weak balance constraints to infer missing
+                    signs within directed triads.
+                  </li>
+                  <li>
+                    Classified unseen domains with a transparent 51% majority
+                    rule over incoming edge signs.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <strong>Security and scalability considerations</strong>
+                <ul>
+                  <li>Rule-based explanations instead of opaque model scores.</li>
+                  <li>No classifier training or retraining for new domains.</li>
+                  <li>
+                    Sparse-graph processing over 48,205 nodes and 384,592 edges.
+                  </li>
+                  <li>
+                    Explicit handling of low-evidence domains through an unknown
+                    outcome.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="system-diagram" aria-label="SiNMULI system diagram">
+              <span>Seed URLs</span><span>Hyperlink crawl</span
+              ><span>Signed graph</span><span>Balance inference</span
+              ><span>51% classification</span>
+            </div>
+            <div class="case-footer">
+              <p>
+                <strong>Outcome:</strong> arXiv:2608.19190 preprint reporting
+                99.89% accuracy and 99.80% F1, with public code and data.
+              </p>
+              <a href="../research/sinmuli.html">View research page →</a
+              ><a
+                href="https://github.com/sayanmondal2098/SinMuli"
+                target="_blank"
+                rel="noopener"
+                >Code &amp; data ↗</a
+              >
+            </div>
+          </article>
+
           <article class="case-study reveal" id="cairn">
             <div class="case-study-head">
               <p class="case-type">Cybersecurity research</p>
@@ -313,7 +397,7 @@
                 <strong>Outcome:</strong> peer-reviewed ACM AsiaCCS '26 poster
                 paper with DOI 10.1145/3779208.3804893.
               </p>
-              <a href="research-cairn.html">View research page →</a
+              <a href="../research/cairn.html">View research page →</a
               ><a
                 href="https://doi.org/10.1145/3779208.3804893"
                 target="_blank"
@@ -395,7 +479,7 @@
                 <strong>Outcome:</strong> peer-reviewed ISEC 2026 short paper
                 with DOI 10.1145/3796563.3796574.
               </p>
-              <a href="research-entrourl.html">View research page →</a
+              <a href="../research/entrourl.html">View research page →</a
               ><a
                 href="https://doi.org/10.1145/3796563.3796574"
                 target="_blank"
@@ -416,7 +500,7 @@
         <div>
           <a href="projects.html">Projects</a>
           <a href="architecture.html">Architecture</a>
-          <a href="papers.html">Papers</a>
+          <a href="../research/">Papers</a>
           <a href="resume.html">Resume</a>
           <a href="contact.html">Contact</a>
           <a

@@ -1,9 +1,10 @@
 const citationFiles = {
-  cairn: "../citations/mondal2026cairn.bib",
-  entrourl: "../citations/gayen2026entrourl.bib",
-  railway: "../citations/banerjee2020railway.bib",
-  dimensionality: "../citations/chakraborty2020dimensionality.bib",
-  streetlight: "../citations/mondal2017streetlight.bib",
+  sinmuli: "citations/gayen2026sinmuli.bib",
+  cairn: "citations/mondal2026cairn.bib",
+  entrourl: "citations/gayen2026entrourl.bib",
+  railway: "citations/banerjee2020railway.bib",
+  dimensionality: "citations/chakraborty2020dimensionality.bib",
+  streetlight: "citations/mondal2017streetlight.bib",
 };
 
 const citationStatus = document.getElementById("citation-status");

@@ -7,4 +7,5 @@ These pages are retained for reference but are not linked from the active portfo
 - `TandC.html` — legacy terms and conditions page
 - `tester.html` — legacy test page
 
-The active website pages are `index.html`, `pages/papers.html`, and `pages/resume.html`.
+The active website pages include `index.html`, `research/index.html`, and
+`pages/resume.html`.

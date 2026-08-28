@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="SiNMULI research project by Sayan Mondal: a directed signed-network approach to interpretable malicious URL identification."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <link
+      rel="icon"
+      href="../img/branding/favicon.svg?v=5"
+      type="image/svg+xml"
+    />
+    <title>SiNMULI Research Project - Sayan Mondal</title>
+    <link
+      rel="canonical"
+      href="https://sayanmondal2098.github.io/research/sinmuli.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/research-projects.css" />
+    <script defer src="../js/site.js"></script>
+    <script defer src="../js/citations.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "SiNMULI: Novel Signed Network Approach for Malicious URL Identification",
+        "datePublished": "2026-08-19",
+        "identifier": "arXiv:2608.19190",
+        "url": "https://arxiv.org/abs/2608.19190",
+        "sameAs": [
+          "https://doi.org/10.48550/arXiv.2608.19190",
+          "https://github.com/sayanmondal2098/SinMuli"
+        ],
+        "isAccessibleForFree": true,
+        "author": [
+          { "@type": "Person", "name": "Avijit Gayen" },
+          {
+            "@type": "Person",
+            "name": "Sayan Mondal",
+            "url": "https://sayanmondal2098.github.io/"
+          },
+          { "@type": "Person", "name": "Angshuman Jana" }
+        ],
+        "keywords": [
+          "cybersecurity",
+          "malicious URL identification",
+          "signed networks",
+          "social balance theory",
+          "trust inference"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#research">Research</a
+          ><a href="../pages/projects.html">Projects</a
+          ><a href="../pages/architecture.html">Architecture</a
+          ><a href="./">Papers</a
+          ><a class="button button-small" href="../pages/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <p class="kicker">Latest research · 2026</p>
+        <h1>SiNMULI: signed-network reasoning for malicious URLs.</h1>
+        <p>
+          SiNMULI reframes malicious URL identification as inference over a
+          directed network of websites and hyperlinks, using trust and distrust
+          relationships to classify previously unseen domains.
+        </p>
+        <div class="profile-actions">
+          <a
+            class="button"
+            href="https://arxiv.org/abs/2608.19190"
+            target="_blank"
+            rel="noopener"
+            >Read on arXiv ↗</a
+          ><a
+            class="button button-outline"
+            href="citations/gayen2026sinmuli.bib"
+            download
+            >Download BibTeX</a
+          ><button
+            class="button button-outline citation-copy"
+            type="button"
+            data-copy-citation="sinmuli"
+            data-title="SiNMULI"
+          >
+            Copy citation
+          </button>
+          <a
+            class="button button-outline"
+            href="https://github.com/sayanmondal2098/SinMuli"
+            target="_blank"
+            rel="noopener"
+            >Code &amp; data ↗</a
+          >
+        </div>
+      </section>
+
+      <section class="research-project-summary wrap reveal">
+        <div><strong>Record</strong><span>arXiv:2608.19190v1</span></div>
+        <div><strong>Submitted</strong><span>19 August 2026</span></div>
+        <div><strong>Status</strong><span>Preprint</span></div>
+        <p>Authors: Avijit Gayen, Sayan Mondal, and Angshuman Jana.</p>
+      </section>
+
+      <section class="section wrap research-project-body">
+        <article class="research-panel reveal">
+          <p class="case-type">Methodology</p>
+          <h2>Use the web’s relationships, not only the URL string.</h2>
+          <div class="research-two-col">
+            <div>
+              <strong>Core method</strong>
+              <ul>
+                <li>
+                  Represent websites as nodes and hyperlinks as directed signed
+                  edges encoding trust or distrust.
+                </li>
+                <li>
+                  Extract directed triads from the network and apply strong or
+                  weak social-balance constraints.
+                </li>
+                <li>
+                  Infer missing edge signs while preserving the network’s local
+                  structural consistency.
+                </li>
+                <li>
+                  Label an unseen domain using a 51% majority rule over its known
+                  incoming edge signs.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <strong>Why it matters</strong>
+              <p>
+                Blacklists miss new threats, while feature-based classifiers can
+                depend on labeled training data and brittle surface signals.
+                SiNMULI provides a rule-based, interpretable decision path from
+                hyperlink structure to each classification.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Architecture diagram</p>
+          <h2>Signed-network identification flow</h2>
+          <div class="research-architecture">
+            <span>80,000 cleaned seed URLs</span><span>One-hop link crawl</span
+            ><span>Directed signed graph</span><span>Triad extraction</span
+            ><span>Balance-based sign inference</span
+            ><span>51% majority classification</span>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Dataset and evaluation</p>
+          <h2>A large, sparse real-world hyperlink graph.</h2>
+          <div class="resource-grid">
+            <div>
+              <strong>Dataset context</strong>
+              <p>
+                The pipeline starts with 80,000 cleaned seed URLs, then crawls
+                and canonicalizes their hyperlink relationships. The resulting
+                directed graph contains 48,205 nodes and 384,592 edges, including
+                46,415 benign and 1,790 malicious labeled nodes.
+              </p>
+            </div>
+            <div>
+              <strong>Reported results</strong>
+              <p>
+                The paper reports 99.89% accuracy and a 99.80% F1-score, placing
+                SiNMULI above the evaluated traditional machine-learning and
+                deep-learning baselines while avoiding classifier training.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Scope and limitations</p>
+          <h2>Strong structural signals depend on observable links.</h2>
+          <div class="research-two-col">
+            <div>
+              <strong>Claimed strengths</strong>
+              <ul>
+                <li>Transparent decisions grounded in signed graph structure.</li>
+                <li>No learned model or retraining step for new domains.</li>
+                <li>Less dependence on easily obfuscated URL-string features.</li>
+                <li>Rule-based inference designed for sparse graph structure.</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Current boundaries</strong>
+              <p>
+                Short-lived, crawler-blocking, JavaScript-heavy, or login-gated
+                sites may expose too few links for reliable graph construction.
+                The paper also identifies incremental, real-time graph updates as
+                future work beyond the current offline pipeline.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-panel reveal">
+          <p class="case-type">Open artifacts</p>
+          <h2>Paper, citation, implementation, and data.</h2>
+          <div class="artifact-grid">
+            <a
+              href="https://doi.org/10.48550/arXiv.2608.19190"
+              target="_blank"
+              rel="noopener"
+              ><strong>DOI</strong><span>Persistent preprint record</span></a
+            ><a
+              href="https://arxiv.org/pdf/2608.19190"
+              target="_blank"
+              rel="noopener"
+              ><strong>PDF</strong><span>Read the full preprint</span></a
+            ><a href="citations/gayen2026sinmuli.bib" download
+              ><strong>BibTeX</strong><span>Download citation file</span></a
+            ><a
+              href="https://github.com/sayanmondal2098/SinMuli"
+              target="_blank"
+              rel="noopener"
+              ><strong>Code &amp; data</strong
+              ><span>Public implementation and datasets</span></a
+            >
+          </div>
+        </article>
+        <div
+          id="citation-status"
+          class="citation-toast"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../pages/architecture.html">Architecture</a>
+          <a href="./">Papers</a>
+          <a href="../pages/resume.html">Resume</a>
+          <a href="../pages/contact.html">Contact</a>
+          <a
+            href="https://www.linkedin.com/in/sayanmondal2098/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/sayanmondal2098"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>

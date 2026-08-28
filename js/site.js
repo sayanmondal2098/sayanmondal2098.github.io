@@ -1,7 +1,8 @@
-const assetRoot = window.location.pathname.includes("/pages/") ? "../" : "";
-const isHomePage =
-  window.location.pathname.endsWith("/") ||
-  window.location.pathname.endsWith("/index.html");
+const isNestedPage = ["/pages/", "/research/"].some((segment) =>
+  window.location.pathname.includes(segment),
+);
+const assetRoot = isNestedPage ? "../" : "";
+const isHomePage = Boolean(document.querySelector(".hero"));
 if (isHomePage) {
   [
     "css/education.css?v=2",
