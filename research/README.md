@@ -25,5 +25,4 @@ research pages stay consistent with the rest of the portfolio.
 5. Update the homepage, project archive, résumé, and summary counts when the
    publication changes what those pages should feature.
 
-The old URLs under `../pages/` are compatibility redirects only. Research
-content should be edited here.
+Research content and canonical URLs live in this folder.
