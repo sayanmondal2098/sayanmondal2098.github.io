@@ -58,21 +58,24 @@
 
 .research-themes {
   padding: 70px 0;
+  text-align: center;
 }
 
 .research-themes .skill-cloud {
   margin-top: 20px;
+  justify-content: center;
 }
 
 .publication-guide {
   max-width: 780px;
-  margin: 24px 0 0;
+  margin: 24px auto 0;
   padding: 16px 18px;
   border-left: 3px solid var(--violet);
   background: #f1effa;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.6;
+  text-align: left;
 }
 
 .publication-guide strong {
