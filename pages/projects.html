@@ -68,6 +68,7 @@
           <a class="button" href="#agentic-ai">Enterprise AI</a
           ><a class="button button-outline" href="#servicenow">ServiceNow</a
           ><a class="button button-outline" href="#sinmuli">SiNMULI</a
+          ><a class="button button-outline" href="#astria">ASTriA</a
           ><a class="button button-outline" href="#cairn">CAIRN</a
           ><a class="button button-outline" href="#entrourl">EntroURL-Bench</a
           ><a class="button button-outline" href="architecture.html"
@@ -80,9 +81,9 @@
         class="research-summary wrap reveal"
         aria-label="Project overview"
       >
-        <div><strong>5</strong><span>case studies</span></div>
+        <div><strong>6</strong><span>case studies</span></div>
         <div><strong>2</strong><span>enterprise cases</span></div>
-        <div><strong>3</strong><span>research cases</span></div>
+        <div><strong>4</strong><span>research cases</span></div>
         <p>
           Enterprise delivery details are intentionally anonymized where project
           data, customer context, demos, or production metrics are private.
@@ -325,6 +326,89 @@
                 target="_blank"
                 rel="noopener"
                 >Code &amp; data ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="case-study reveal" id="astria">
+            <div class="case-study-head">
+              <p class="case-type">IEEE TENSYMP 2026 · Cybersecurity ML</p>
+              <h2>ASTriA: scalable semi-supervised malicious URL detection</h2>
+              <p>
+                Explores how a lightweight semi-supervised learning workflow can
+                identify malicious URLs when extensive, up-to-date labeled data
+                is difficult and expensive to obtain.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Research problem</strong>
+                <p>
+                  Newly generated malicious URLs can evade blacklists, while
+                  collecting enough current, reliable labels for supervised
+                  training remains costly and time-consuming.
+                </p>
+              </div>
+              <div>
+                <strong>Technology stack</strong>
+                <div class="tech-list">
+                  <span>Semi-supervised learning</span><span>Tri-learning</span
+                  ><span>Pseudo-labeling</span><span>Random Forest</span
+                  ><span>k-Nearest Neighbors</span><span>URL features</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Architectural decisions</strong>
+                <ul>
+                  <li>
+                    Expanded a small labeled seed set by iteratively selecting
+                    high-confidence pseudo-labels from an unlabeled URL pool.
+                  </li>
+                  <li>
+                    Used lightweight lexical and host-based features to balance
+                    detection quality with practical efficiency.
+                  </li>
+                  <li>
+                    Kept the classification workflow interpretable through
+                    familiar models including Random Forest and k-Nearest
+                    Neighbors.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <strong>Security and scalability considerations</strong>
+                <ul>
+                  <li>Reduces dependence on manually labeled URL datasets.</li>
+                  <li>Targets newly generated URLs beyond static blacklists.</li>
+                  <li>Uses computationally lightweight URL representations.</li>
+                  <li>
+                    Limits pseudo-label expansion to high-confidence samples.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="system-diagram" aria-label="ASTriA system diagram">
+              <span>Labeled URLs</span><span>Unlabeled URL pool</span
+              ><span>High-confidence pseudo-labels</span
+              ><span>Tri-learning classifiers</span><span>URL decision</span>
+            </div>
+            <div class="case-footer">
+              <p>
+                <strong>Outcome:</strong> peer-reviewed IEEE TENSYMP 2026
+                conference paper, pp. 1–5.
+              </p>
+              <a
+                href="https://doi.org/10.1109/TENSYMP68909.2026.11704039"
+                target="_blank"
+                rel="noopener"
+                >View DOI →</a
+              ><a
+                href="https://ieeexplore.ieee.org/document/11704039/"
+                target="_blank"
+                rel="noopener"
+                >IEEE Xplore ↗</a
               >
             </div>
           </article>
