@@ -8,10 +8,14 @@ project pages, and BibTeX records.
 | File | Purpose |
 | --- | --- |
 | `index.html` | Complete publication archive and citation actions |
+| `cyberhull.html` | CyberHull geometric URL detection research page |
+| `astria.html` | ASTriA semi-supervised tri-learning research page |
+| `carbon-loss.html` | Little Andaman carbon-loss estimation research page |
 | `sinmuli.html` | SiNMULI research project page |
 | `cairn.html` | CAIRN research project page |
 | `entrourl.html` | EntroURL-Bench research project page |
 | `citations/` | Downloadable BibTeX records for every publication |
+| `SOURCES.md` | Source records, verification date, and counting conventions |
 
 Shared presentation and behavior remain in `../css/` and `../js/` so the
 research pages stay consistent with the rest of the portfolio.

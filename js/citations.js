@@ -1,4 +1,6 @@
 const citationFiles = {
+  cyberhull: "citations/gayen2026cyberhull.bib",
+  "carbon-loss": "citations/raha2022carbon.bib",
   astria: "citations/gayen2026astria.bib",
   sinmuli: "citations/gayen2026sinmuli.bib",
   cairn: "citations/mondal2026cairn.bib",

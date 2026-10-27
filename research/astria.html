@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="A lightweight semi-supervised approach that expands limited labeled URL data through collaborative, high-confidence pseudo-labeling." />
+    <meta name="theme-color" content="#08111f" />
+    <link rel="icon" href="../img/branding/favicon.svg?v=5" type="image/svg+xml" />
+    <title>ASTriA — Research by Sayan Mondal</title>
+    <link rel="canonical" href="https://sayanmondal2098.github.io/research/astria.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/research-projects.css" />
+    <script defer src="../js/site.js"></script>
+    <script defer src="../js/citations.js"></script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ASTriA: Adaptive Semi-Supervised Tri-Learning Approach for Scalable Malicious URL Detection",
+  "datePublished": "2026-06",
+  "identifier": "10.1109/TENSYMP68909.2026.11704039",
+  "url": "https://doi.org/10.1109/TENSYMP68909.2026.11704039",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Avijit Gayen"
+    },
+    {
+      "@type": "Person",
+      "name": "Sayan Mondal"
+    },
+    {
+      "@type": "Person",
+      "name": "Bhanu Bariar"
+    },
+    {
+      "@type": "Person",
+      "name": "Khokan Mondal"
+    },
+    {
+      "@type": "Person",
+      "name": "Angshuman Jana"
+    }
+  ],
+  "sameAs": [
+    "https://doi.org/10.1109/TENSYMP68909.2026.11704039"
+  ],
+  "pagination": "1–5",
+  "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+  }
+}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#research">Research</a
+          ><a href="../pages/projects.html">Projects</a
+          ><a href="../pages/architecture.html">Architecture</a
+          ><a href="./">Papers</a
+          ><a class="button button-small" href="../pages/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <a class="text-link" href="./">← All publications</a>
+        <p class="kicker">Cybersecurity & machine learning · IEEE TENSYMP 2026</p>
+        <h1>ASTriA: Adaptive Semi-Supervised Tri-Learning Approach for Scalable Malicious URL Detection</h1>
+        <p>A lightweight semi-supervised approach that expands limited labeled URL data through collaborative, high-confidence pseudo-labeling.</p>
+        <div class="profile-actions">
+          <a href="https://doi.org/10.1109/TENSYMP68909.2026.11704039" target="_blank" rel="noopener" class="button">Read the paper ↗</a>
+          <a class="button button-outline" href="citations/gayen2026astria.bib" download>Download BibTeX</a>
+          <button class="button button-outline citation-copy" type="button" data-copy-citation="astria" data-title="ASTriA">Copy citation</button>
+          
+        </div>
+      </section>
+      <section class="research-project-summary wrap reveal" aria-label="Publication details">
+        <div><strong>Record</strong><span>IEEE TENSYMP · pp. 1–5</span></div>
+        <div><strong>Published</strong><span>2026-06</span></div>
+        <div><strong>Status</strong><span>Conference paper</span></div>
+        <p>Authors: Avijit Gayen, Sayan Mondal, Bhanu Bariar, Khokan Mondal, Angshuman Jana.</p>
+      </section>
+      <nav class="research-jump wrap" aria-label="On this page"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#scope">Evidence & scope</a><a href="#context">Research context</a><a href="#resources">Publication & citation</a></nav>
+      <section class="section wrap research-project-body">
+        <article class="research-panel reveal" id="overview">
+          <p class="case-type">Research question</p><h2>Learn from URLs when labels are scarce.</h2>
+          <div class="research-two-col"><div><strong>Motivation</strong><p>Maintaining a large, current collection of labeled malicious URLs is expensive. Blacklists struggle with newly generated addresses, while purely unsupervised detection can flag harmless URLs without reliable supervision.</p></div><div><strong>Research contribution</strong><p>ASTriA investigates adaptive semi-supervised tri-learning: multiple learners help assign reliable pseudo-labels to unlabeled samples, expanding a smaller labeled training set over successive iterations.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="method">
+          <p class="case-type">Methodology</p><h2>Iteratively expand the labeled training set.</h2>
+          <ol class="research-flow"><li>Labeled seed URLs</li><li>Unlabeled URL pool</li><li>Lexical & host features</li><li>Collaborative pseudo-labels</li><li>Expand training set</li><li>Repeat & classify</li></ol><div class="research-two-col"><div><strong>Inputs and representation</strong><p>A limited labeled collection anchors learning, while a larger unlabeled pool supplies additional examples. Lightweight lexical and host-based features keep the representation practical for URL classification.</p></div><div><strong>Learning workflow</strong><p>The published abstract describes iterative high-confidence pseudo-labeling with interpretable classifiers including Random Forest and k-Nearest Neighbors. The tri-learning design uses collaboration among learners to reduce dependence on manually supplied labels.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="scope">
+          <p class="case-type">Evidence and interpretation</p><h2>A documented method with a clear publication record.</h2>
+          <div class="research-two-col"><div><strong>Verified evidence</strong><p>The IEEE publication record confirms the title, five authors, TENSYMP venue, and pages 1–5. The public abstract supports the labeled/unlabeled workflow, pseudo-labeling approach, feature families, and named classifiers.</p><p>Numerical accuracy, dataset sizes, learner configurations, and confidence thresholds are not reproduced here because those details were not available in the accessible abstract.</p></div><div><strong>Evaluation considerations</strong><p>When applying this method, inspect how pseudo-label errors propagate, how confidence is calibrated, and how performance changes as URL distributions evolve. These are practical considerations for interpreting semi-supervised systems, not additional experimental claims about ASTriA.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="context">
+          <p class="case-type">Connected research</p><h2>Different routes to trustworthy URL detection.</h2>
+          <p>ASTriA focuses on learning from partially labeled data. <a href="sinmuli.html">SiNMULI</a> studies signed hyperlink relationships; <a href="cyberhull.html">CyberHull</a> studies geometric feature boundaries; <a href="entrourl.html">EntroURL-Bench</a> supplies a separate line of work on richer, reproducible URL datasets. These projects explore complementary questions; this comparison does not imply that they share an evaluation protocol.</p>
+        </article>
+        <article class="research-panel reveal" id="resources">
+          <p class="case-type">Publication record</p><h2>IEEE Region 10 Symposium, 2026.</h2>
+          <p><strong>Authors:</strong> Avijit Gayen, Sayan Mondal, Bhanu Bariar, Khokan Mondal, and Angshuman Jana.</p><p><strong>Venue:</strong> 2026 IEEE Region 10 Symposium (TENSYMP), Penang, Malaysia, 29 June–1 July 2026, pp. 1–5. The conference program lists the presentation on 30 June.</p><div class="paper-links"><a href="https://doi.org/10.1109/TENSYMP68909.2026.11704039" target="_blank" rel="noopener">DOI ↗</a><a href="https://ieeexplore.ieee.org/document/11704039/" target="_blank" rel="noopener">IEEE Xplore ↗</a><a href="https://ieeemy.org/tensymp2026/day-2-30-6-2026-tuesday/" target="_blank" rel="noopener">Conference program ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=dwLadG8AAAAJ&amp;citation_for_view=dwLadG8AAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener">Scholar abstract ↗</a></div><p class="research-source">Metadata checked against IEEE’s Crossref deposit and the official conference program on 27 October 2026.</p>
+        </article>
+        <article class="research-panel reveal">
+          <p class="case-type">Continue exploring</p>
+          <h2>Related research</h2>
+          <div class="paper-links">
+            <a href="cyberhull.html">CyberHull</a><a href="sinmuli.html">SiNMULI</a>
+            <a href="astria.html">ASTriA</a><a href="entrourl.html">EntroURL-Bench</a>
+            <a href="carbon-loss.html">Carbon-loss estimation</a><a href="./">Full publication archive →</a>
+          </div>
+        </article>
+        <div id="citation-status" class="citation-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../pages/architecture.html">Architecture</a>
+          <a href="./">Papers</a>
+          <a href="../pages/resume.html">Resume</a>
+          <a href="../pages/contact.html">Contact</a>
+          <a
+            href="https://www.linkedin.com/in/sayanmondal2098/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/sayanmondal2098"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>

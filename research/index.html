@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Research publications by Sayan Mondal in cybersecurity, trustworthy machine learning, NLP, and intelligent systems."
+      content="Research publications by Sayan Mondal in cybersecurity, trustworthy machine learning, geospatial carbon estimation, NLP, and intelligent systems."
     />
     <meta name="theme-color" content="#08111f" />
     <link
@@ -86,12 +86,15 @@
         <p class="kicker">Research archive</p>
         <h1>Papers & publications.</h1>
         <p>
-          Research spanning signed-network security, causal cyber defense,
-          trustworthy machine learning, natural language processing, transport
-          safety, and intelligent public infrastructure.
+          Research spanning geometric and signed-network security, causal cyber
+          defense, semi-supervised learning, geospatial carbon estimation,
+          natural language processing, and intelligent infrastructure.
         </p>
         <div class="profile-actions">
-          <a class="button" href="sinmuli.html">SiNMULI project</a
+          <a class="button" href="cyberhull.html">CyberHull project</a
+          ><a class="button button-outline" href="astria.html">ASTriA project</a
+          ><a class="button button-outline" href="carbon-loss.html">Carbon-loss study</a
+          ><a class="button button-outline" href="sinmuli.html">SiNMULI project</a
           ><a class="button button-outline" href="cairn.html"
             >CAIRN project</a
           ><a class="button button-outline" href="entrourl.html"
@@ -123,17 +126,13 @@
         class="research-summary wrap reveal"
         aria-label="Research overview"
       >
-        <div><strong>7</strong><span>publications</span></div>
-        <div><strong>2026</strong><span>latest publication</span></div>
-        <div><strong>6</strong><span>research themes</span></div>
+        <div><strong>9</strong><span>archived works</span></div>
+        <div><strong>10</strong><span>Scholar citations</span></div>
+        <div><strong>1</strong><span>Scholar h-index</span></div>
         <p>
-          For live citation counts and citation exports, see my
-          <a
-            href="https://scholar.google.com/citations?user=dwLadG8AAAAJ&amp;hl=en"
-            target="_blank"
-            rel="noopener"
-            >Google Scholar profile ↗</a
-          >
+          Scholar snapshot: <time datetime="2026-10-27">27 October 2026</time>.
+          Seven indexed articles; i10-index: 0. This archive also includes two
+          earlier reports/preprints. <a href="https://scholar.google.com/citations?user=dwLadG8AAAAJ&amp;hl=en" target="_blank" rel="noopener">View live Scholar metrics ↗</a>
         </p>
       </section>
 
@@ -144,7 +143,8 @@
             <span>Causal cyber defense</span><span>Malicious URL detection</span
             ><span>Semi-supervised learning</span
             ><span>Signed-network security</span><span>NLP & embeddings</span
-            ><span>Intelligent infrastructure</span>
+            ><span>Intelligent infrastructure</span><span>Geometric threat detection</span
+            ><span>Geospatial carbon estimation</span>
           </div>
           <p class="publication-guide">
             <strong>How the labels work:</strong> “Preprint” means a manuscript
@@ -154,7 +154,28 @@
           </p>
         </div>
 
-        <article class="paper-card paper-featured reveal">
+        <article class="paper-card paper-featured reveal" id="cyberhull">
+          <div class="paper-year">2026</div>
+          <div>
+            <p class="venue">arXiv preprint · Submitted 20 October 2026 · Revised 23 October 2026 · arXiv:2610.27675v2</p>
+            <h2>CyberHull: Deterministic Malicious URL Isolation via Convex Hull</h2>
+            <p class="paper-meta">Avijit Gayen · Aniket Ghosal · Durba Chakraborty · <strong>Sayan Mondal</strong> · Md Abdul Aziz Al Aman · Angshuman Jana</p>
+            <p class="paper-abstract">CyberHull builds convex boundaries around legitimate web behaviour using content entropy, semantic features, and hyperlink topology. Deterministic containment tests identify URLs that fall outside the learned regions.</p>
+            <div class="paper-details"><div><strong>Problem</strong><span>Detect evolving malicious URLs with inspectable, computationally lightweight decisions.</span></div><div><strong>Approach</strong><span>QuickHull-based geometric vaults across complementary feature spaces.</span></div><div><strong>Reported result</strong><span>92% accuracy and 0.92 F1 in the v2 preprint’s benchmark; broader traffic validation remains future work.</span></div></div>
+            <div class="citation-actions">
+              <span>Cite this work</span>
+              <a href="citations/gayen2026cyberhull.bib" download>Download BibTeX ↓</a>
+              <button class="citation-copy" type="button" data-copy-citation="cyberhull" data-title="CyberHull">Copy citation</button>
+            </div>
+            <div class="paper-links">
+              <a href="cyberhull.html">View research page →</a>
+              <a href="https://arxiv.org/abs/2610.27675" target="_blank" rel="noopener">arXiv ↗</a><a href="https://arxiv.org/pdf/2610.27675v2" target="_blank" rel="noopener">PDF (v2) ↗</a><a href="https://doi.org/10.48550/arXiv.2610.27675" target="_blank" rel="noopener">DOI ↗</a><a href="https://github.com/AniketGhosal/CyberHull-URL-Detection" target="_blank" rel="noopener">Code &amp; data ↗</a>
+            </div>
+          </div>
+          <span class="paper-type">arXiv preprint</span>
+        </article>
+
+        <article class="paper-card reveal" id="sinmuli">
           <div class="paper-year">2026</div>
           <div>
             <p class="venue">
@@ -301,6 +322,7 @@
               </button>
             </div>
             <div class="paper-links">
+              <a href="astria.html">View research page →</a>
               <a
                 href="https://doi.org/10.1109/TENSYMP68909.2026.11704039"
                 target="_blank"
@@ -320,6 +342,27 @@
             </div>
           </div>
           <span class="paper-type">Peer-reviewed conference paper</span>
+        </article>
+
+        <article class="paper-card reveal" id="carbon-loss">
+          <div class="paper-year">2022</div>
+          <div>
+            <p class="venue">IJARCCE · Volume 11, issue 3 · March 2022 · pp. 196–203 · DOI 10.17148/IJARCCE.2022.11336</p>
+            <h2>Carbon loss estimation: a case study of Little Andaman development plan</h2>
+            <p class="paper-meta">Sujit Raha · Avijit Chakraborty · Purbita Chatterjee · Tanmoy Chakraborty · <strong>Sayan Mondal</strong></p>
+            <p class="paper-abstract">A geospatial estimation study connecting Bhuvan land-cover data with forest carbon inventories to assess carbon stock potentially affected by the Little Andaman development scenario described in 2022.</p>
+            <div class="paper-details"><div><strong>Data</strong><span>Resourcesat-2 LISS-III land-cover data from 2015–16 and the India State of Forest Report 2019.</span></div><div><strong>Method</strong><span>QGIS processing and forest-class area estimates across five carbon pools.</span></div><div><strong>Interpretation</strong><span>A historical stock-loss estimate; the detailed page explains the source’s unit and study-area inconsistencies.</span></div></div>
+            <div class="citation-actions">
+              <span>Cite this work</span>
+              <a href="citations/raha2022carbon.bib" download>Download BibTeX ↓</a>
+              <button class="citation-copy" type="button" data-copy-citation="carbon-loss" data-title="Carbon loss estimation">Copy citation</button>
+            </div>
+            <div class="paper-links">
+              <a href="carbon-loss.html">View research page →</a>
+              <a href="https://doi.org/10.17148/IJARCCE.2022.11336" target="_blank" rel="noopener">DOI ↗</a><a href="https://ijarcce.com/papers/carbon-loss-estimation-a-case-study-of-little-andaman-development-plan/" target="_blank" rel="noopener">Publisher ↗</a><a href="https://ijarcce.com/wp-content/uploads/2022/04/IJARCCE.2022.11336.pdf" target="_blank" rel="noopener">Full text ↗</a>
+            </div>
+          </div>
+          <span class="paper-type">Journal article</span>
         </article>
 
         <article class="paper-card reveal">
@@ -739,7 +782,7 @@
             <h2>Track the research.</h2>
           </div>
           <p>
-            Every publication above now includes a verified BibTeX download and
+            Every publication above includes a BibTeX download and
             a one-click citation-copy action. Google Scholar remains available
             for live citation counts and additional export formats.
           </p>

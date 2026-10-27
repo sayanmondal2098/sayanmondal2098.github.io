@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="A geospatial study combining Bhuvan land-cover data and forest carbon inventories to estimate carbon stock affected by a development scenario." />
+    <meta name="theme-color" content="#08111f" />
+    <link rel="icon" href="../img/branding/favicon.svg?v=5" type="image/svg+xml" />
+    <title>Carbon-loss estimation — Research by Sayan Mondal</title>
+    <link rel="canonical" href="https://sayanmondal2098.github.io/research/carbon-loss.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/research-projects.css" />
+    <script defer src="../js/site.js"></script>
+    <script defer src="../js/citations.js"></script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Carbon loss estimation: a case study of Little Andaman development plan",
+  "datePublished": "2022-03",
+  "identifier": "10.17148/IJARCCE.2022.11336",
+  "url": "https://ijarcce.com/papers/carbon-loss-estimation-a-case-study-of-little-andaman-development-plan/",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sujit Raha"
+    },
+    {
+      "@type": "Person",
+      "name": "Avijit Chakraborty"
+    },
+    {
+      "@type": "Person",
+      "name": "Purbita Chatterjee"
+    },
+    {
+      "@type": "Person",
+      "name": "Tanmoy Chakraborty"
+    },
+    {
+      "@type": "Person",
+      "name": "Sayan Mondal"
+    }
+  ],
+  "sameAs": [
+    "https://doi.org/10.17148/IJARCCE.2022.11336"
+  ],
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "pagination": "196–203"
+}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#research">Research</a
+          ><a href="../pages/projects.html">Projects</a
+          ><a href="../pages/architecture.html">Architecture</a
+          ><a href="./">Papers</a
+          ><a class="button button-small" href="../pages/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <a class="text-link" href="./">← All publications</a>
+        <p class="kicker">Environmental computing · Journal article · March 2022</p>
+        <h1>Carbon loss estimation: a case study of Little Andaman development plan</h1>
+        <p>A geospatial study combining Bhuvan land-cover data and forest carbon inventories to estimate carbon stock affected by a development scenario.</p>
+        <div class="profile-actions">
+          <a href="https://ijarcce.com/papers/carbon-loss-estimation-a-case-study-of-little-andaman-development-plan/" target="_blank" rel="noopener" class="button">Read the paper ↗</a>
+          <a class="button button-outline" href="citations/raha2022carbon.bib" download>Download BibTeX</a>
+          <button class="button button-outline citation-copy" type="button" data-copy-citation="carbon-loss" data-title="Carbon-loss estimation">Copy citation</button>
+          <a href="https://ijarcce.com/wp-content/uploads/2022/04/IJARCCE.2022.11336.pdf" target="_blank" rel="noopener" class="button button-outline">Open PDF ↗</a>
+        </div>
+      </section>
+      <section class="research-project-summary wrap reveal" aria-label="Publication details">
+        <div><strong>Record</strong><span>IJARCCE 11(3) · pp. 196–203</span></div>
+        <div><strong>Published</strong><span>2022-03</span></div>
+        <div><strong>Status</strong><span>Journal article</span></div>
+        <p>Authors: Sujit Raha, Avijit Chakraborty, Purbita Chatterjee, Tanmoy Chakraborty, Sayan Mondal.</p>
+      </section>
+      <nav class="research-jump wrap" aria-label="On this page"><a href="#overview">Overview</a><a href="#data">Data sources</a><a href="#method">Method</a><a href="#findings">Findings & interpretation</a><a href="#limits">Scope & future work</a><a href="#resources">Publication & citation</a></nav>
+      <section class="section wrap research-project-body">
+        <article class="research-panel reveal" id="overview">
+          <p class="case-type">Research question</p><h2>Estimate the carbon implications of land-use change.</h2>
+          <div class="research-two-col"><div><strong>Study context</strong><p>The paper examines the Little Andaman development proposal discussed at the time of publication in 2022. It asks how forest clearing within the proposed development area could affect stored carbon.</p></div><div><strong>Contribution</strong><p>The study combines satellite-derived land-cover areas with published forest carbon inventories in QGIS. It provides a secondary-data estimation workflow to support environmental assessment, rather than a direct field measurement of emissions.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="data">
+          <p class="case-type">Data and tools</p><h2>Connect land cover with forest carbon inventories.</h2>
+          <div class="research-table-wrap" role="region" aria-label="Carbon study data sources" tabindex="0"><table class="research-table"><caption>Inputs documented in the 2022 paper</caption><thead><tr><th scope="col">Input</th><th scope="col">Reference period</th><th scope="col">Use</th></tr></thead><tbody><tr><th scope="row">Bhuvan land use / land cover</th><td>2015–16</td><td>Resourcesat-2 LISS-III thematic data at 1:50,000 scale.</td></tr><tr><th scope="row">India State of Forest Report</th><td>2019</td><td>Forest-type and density-based carbon inventories for the Andaman and Nicobar Islands.</td></tr><tr><th scope="row">QGIS</th><td>Study workflow</td><td>Spatial processing and estimation of forest-class areas.</td></tr></tbody></table></div>
+        </article>
+        <article class="research-panel reveal" id="method">
+          <p class="case-type">Methodology</p><h2>Translate mapped forest areas into carbon-pool estimates.</h2>
+          <ol class="research-flow"><li>Select areas of interest</li><li>Extract land-cover classes</li><li>Estimate class areas</li><li>Match carbon inventories</li><li>Scale each carbon pool</li><li>Aggregate stock estimates</li></ol><div class="research-two-col"><div><strong>Land-cover grouping</strong><p>Four sampled areas inform estimates for evergreen/semi-evergreen forest, deciduous forest, swamp/mangrove, and plantation. The method maps their proportions onto the study area.</p></div><div><strong>Carbon accounting</strong><p>For each forest class, the regional inventory is scaled by the estimated class area. The five pools are above-ground biomass, below-ground biomass, dead wood, litter, and soil organic carbon; their contributions are then summed.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="findings">
+          <p class="case-type">Reported findings</p><h2>Soil and evergreen forests dominate the estimate.</h2>
+          <p>The paper’s tables identify soil organic carbon as the largest pool and evergreen/semi-evergreen forest as the largest forest-class contribution. This highlights why an assessment of forest conversion needs to consider below-ground carbon as well as standing vegetation.</p><p>The results section reports a total of 2,996.286 tonnes. That number is reproduced as a reported value, with an important qualification: the source inventory uses thousands of tonnes, while later tables use tonnes, and study-area references alternate between 210 and 240 km². Those units and area assumptions need reconciliation before the total is reused for planning or comparison.</p><p class="research-source">Source: <a href="https://ijarcce.com/wp-content/uploads/2022/04/IJARCCE.2022.11336.pdf" target="_blank" rel="noopener">Published paper, Tables 1–3 and Results section ↗</a>. The qualification above follows from the labels and area values printed in the paper.</p>
+        </article>
+        <article class="research-panel reveal" id="limits">
+          <p class="case-type">Scope and limitations</p><h2>A historical estimation study.</h2>
+          <div class="research-two-col"><div><strong>Interpretation</strong><p>The work uses historical imagery and regional inventory averages. It estimates carbon stock potentially affected under a development scenario; it does not measure when or how much of that carbon would reach the atmosphere, and it does not establish the current status of the development plan.</p></div><div><strong>Further work</strong><p>The authors suggest improving the estimate with alternative satellite datasets and machine-learning tools in GIS. Updated imagery, explicit unit checks, a consistent study boundary, and field validation would strengthen reuse of the workflow.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="resources">
+          <p class="case-type">Publication record</p><h2>IJARCCE · March 2022.</h2>
+          <p><strong>Authors:</strong> Sujit Raha, Avijit Chakraborty, Purbita Chatterjee, Tanmoy Chakraborty, and Sayan Mondal.</p><p>International Journal of Advanced Research in Computer and Communication Engineering, volume 11, issue 3, pp. 196–203. DOI: 10.17148/IJARCCE.2022.11336.</p><div class="paper-links"><a href="https://ijarcce.com/papers/carbon-loss-estimation-a-case-study-of-little-andaman-development-plan/" target="_blank" rel="noopener">Publisher record ↗</a><a href="https://ijarcce.com/wp-content/uploads/2022/04/IJARCCE.2022.11336.pdf" target="_blank" rel="noopener">Open-access PDF ↗</a><a href="https://doi.org/10.17148/IJARCCE.2022.11336" target="_blank" rel="noopener">DOI ↗</a></div><p class="research-source">Summary based on the CC BY 4.0 paper, verified against the publisher and the author’s Scholar profile on 27 October 2026.</p>
+        </article>
+        <article class="research-panel reveal">
+          <p class="case-type">Continue exploring</p>
+          <h2>Related research</h2>
+          <div class="paper-links">
+            <a href="cyberhull.html">CyberHull</a><a href="sinmuli.html">SiNMULI</a>
+            <a href="astria.html">ASTriA</a><a href="entrourl.html">EntroURL-Bench</a>
+            <a href="carbon-loss.html">Carbon-loss estimation</a><a href="./">Full publication archive →</a>
+          </div>
+        </article>
+        <div id="citation-status" class="citation-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../pages/architecture.html">Architecture</a>
+          <a href="./">Papers</a>
+          <a href="../pages/resume.html">Resume</a>
+          <a href="../pages/contact.html">Contact</a>
+          <a
+            href="https://www.linkedin.com/in/sayanmondal2098/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/sayanmondal2098"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>

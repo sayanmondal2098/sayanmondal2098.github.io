@@ -67,6 +67,8 @@
         <div class="profile-actions">
           <a class="button" href="#agentic-ai">Enterprise AI</a
           ><a class="button button-outline" href="#servicenow">ServiceNow</a
+          ><a class="button button-outline" href="#cyberhull">CyberHull</a
+          ><a class="button button-outline" href="#carbon-loss">Carbon-loss study</a
           ><a class="button button-outline" href="#sinmuli">SiNMULI</a
           ><a class="button button-outline" href="#astria">ASTriA</a
           ><a class="button button-outline" href="#cairn">CAIRN</a
@@ -81,9 +83,9 @@
         class="research-summary wrap reveal"
         aria-label="Project overview"
       >
-        <div><strong>6</strong><span>case studies</span></div>
+        <div><strong>8</strong><span>case studies</span></div>
         <div><strong>2</strong><span>enterprise cases</span></div>
-        <div><strong>4</strong><span>research cases</span></div>
+        <div><strong>6</strong><span>research cases</span></div>
         <p>
           Enterprise delivery details are intentionally anonymized where project
           data, customer context, demos, or production metrics are private.
@@ -247,9 +249,19 @@
             </div>
           </article>
 
+          <article class="case-study reveal" id="cyberhull">
+            <div class="case-study-head"><p class="case-type">Latest research · arXiv preprint · October 2026</p><h2>CyberHull: Deterministic Malicious URL Isolation via Convex Hull</h2><p>Explores inspectable URL classification through geometric boundaries learned from legitimate web features.</p></div>
+            <div class="case-grid"><div><strong>Research problem</strong><p>Changing phishing infrastructure can evade static lists. The study investigates a CPU-based detection approach with explicit decision boundaries.</p></div>
+              <div><strong>Technology stack</strong><div class="tech-list"><span>Python</span><span>SciPy Spatial</span><span>NumPy</span><span>Pandas</span><span>Computational geometry</span></div></div></div>
+            <div class="case-grid"><div><strong>Method</strong><p>Extract content, semantic, and hyperlink features; rank feature pairs; construct QuickHull vaults; classify new URLs using containment tests.</p></div>
+              <div><strong>Scope and limitations</strong><p>Boundary quality depends on clean baseline data and complete feature extraction. Legitimate website changes require recalibration, and broader traffic validation remains future work.</p></div></div>
+            <div class="system-diagram" aria-label="CyberHull: Deterministic Malicious URL Isolation via Convex Hull workflow"><span>Web features</span><span>Feature-pair selection</span><span>Convex hull vaults</span><span>Containment checks</span><span>URL decision</span></div>
+            <div class="case-footer"><p><strong>Outcome:</strong> v2 preprint reports 92% accuracy and 0.92 F1 in its benchmark. Public paper and author-linked implementation are available.</p><a href="../research/cyberhull.html">View research page →</a></div>
+          </article>
+
           <article class="case-study reveal" id="sinmuli">
             <div class="case-study-head">
-              <p class="case-type">Latest cybersecurity research · arXiv 2026</p>
+              <p class="case-type">Signed-network research · arXiv 2026</p>
               <h2>SiNMULI: signed-network malicious URL identification</h2>
               <p>
                 Reframed malicious URL identification as structural inference
@@ -399,6 +411,7 @@
                 <strong>Outcome:</strong> peer-reviewed IEEE TENSYMP 2026
                 conference paper, pp. 1–5.
               </p>
+              <a href="../research/astria.html">View research page →</a>
               <a
                 href="https://doi.org/10.1109/TENSYMP68909.2026.11704039"
                 target="_blank"
@@ -572,6 +585,16 @@
               >
             </div>
           </article>
+          <article class="case-study reveal" id="carbon-loss">
+            <div class="case-study-head"><p class="case-type">Environmental computing · IJARCCE 2022</p><h2>Carbon loss estimation: a case study of Little Andaman development plan</h2><p>Combines satellite land-cover observations and forest inventory data to estimate carbon stock affected by a historical development scenario.</p></div>
+            <div class="case-grid"><div><strong>Research problem</strong><p>Estimate the carbon implications of forest conversion in the Little Andaman proposal examined in the 2022 paper.</p></div>
+              <div><strong>Technology stack</strong><div class="tech-list"><span>QGIS</span><span>Bhuvan</span><span>Remote sensing</span><span>Land-cover analysis</span><span>Carbon accounting</span></div></div></div>
+            <div class="case-grid"><div><strong>Method</strong><p>Map four forest classes from sampled land-cover areas, scale regional carbon densities to the study area, and aggregate five carbon pools.</p></div>
+              <div><strong>Scope and limitations</strong><p>The source contains inconsistent area and unit labels. The detailed page records these limits; the result is not a measurement of present-day emissions.</p></div></div>
+            <div class="system-diagram" aria-label="Carbon loss estimation: a case study of Little Andaman development plan workflow"><span>Land-cover data</span><span>Forest classes</span><span>Carbon inventories</span><span>Area scaling</span><span>Stock estimate</span></div>
+            <div class="case-footer"><p><strong>Outcome:</strong> journal article, volume 11(3), pp. 196–203, with an open-access paper and DOI.</p><a href="../research/carbon-loss.html">View research page →</a></div>
+          </article>
+
         </div>
       </section>
     </main>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Geometric threat detection using explicit convex boundaries over content entropy, semantic features, and hyperlink structure." />
+    <meta name="theme-color" content="#08111f" />
+    <link rel="icon" href="../img/branding/favicon.svg?v=5" type="image/svg+xml" />
+    <title>CyberHull — Research by Sayan Mondal</title>
+    <link rel="canonical" href="https://sayanmondal2098.github.io/research/cyberhull.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/research.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/research-projects.css" />
+    <script defer src="../js/site.js"></script>
+    <script defer src="../js/citations.js"></script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CyberHull: Deterministic Malicious URL Isolation via Convex Hull",
+  "datePublished": "2026-10-20",
+  "identifier": "10.48550/arXiv.2610.27675",
+  "url": "https://arxiv.org/abs/2610.27675",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Avijit Gayen"
+    },
+    {
+      "@type": "Person",
+      "name": "Aniket Ghosal"
+    },
+    {
+      "@type": "Person",
+      "name": "Durba Chakraborty"
+    },
+    {
+      "@type": "Person",
+      "name": "Sayan Mondal"
+    },
+    {
+      "@type": "Person",
+      "name": "Md Abdul Aziz Al Aman"
+    },
+    {
+      "@type": "Person",
+      "name": "Angshuman Jana"
+    }
+  ],
+  "sameAs": [
+    "https://doi.org/10.48550/arXiv.2610.27675"
+  ],
+  "dateModified": "2026-10-23",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html#research">Research</a
+          ><a href="../pages/projects.html">Projects</a
+          ><a href="../pages/architecture.html">Architecture</a
+          ><a href="./">Papers</a
+          ><a class="button button-small" href="../pages/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap reveal">
+        <a class="text-link" href="./">← All publications</a>
+        <p class="kicker">Latest research · arXiv preprint · October 2026</p>
+        <h1>CyberHull: Deterministic Malicious URL Isolation via Convex Hull</h1>
+        <p>Geometric threat detection using explicit convex boundaries over content entropy, semantic features, and hyperlink structure.</p>
+        <div class="profile-actions">
+          <a href="https://arxiv.org/abs/2610.27675" target="_blank" rel="noopener" class="button">Read the paper ↗</a>
+          <a class="button button-outline" href="citations/gayen2026cyberhull.bib" download>Download BibTeX</a>
+          <button class="button button-outline citation-copy" type="button" data-copy-citation="cyberhull" data-title="CyberHull">Copy citation</button>
+          <a href="https://github.com/AniketGhosal/CyberHull-URL-Detection" target="_blank" rel="noopener" class="button button-outline">Code & data ↗</a>
+        </div>
+      </section>
+      <section class="research-project-summary wrap reveal" aria-label="Publication details">
+        <div><strong>Record</strong><span>arXiv:2610.27675v2</span></div>
+        <div><strong>Published</strong><span>2026-10-20</span></div>
+        <div><strong>Status</strong><span>Preprint · revised 23 Oct 2026</span></div>
+        <p>Authors: Avijit Gayen, Aniket Ghosal, Durba Chakraborty, Sayan Mondal, Md Abdul Aziz Al Aman, Angshuman Jana.</p>
+      </section>
+      <nav class="research-jump wrap" aria-label="On this page"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#features">Feature spaces</a><a href="#evaluation">Evaluation</a><a href="#limits">Scope & limitations</a><a href="#resources">Paper & code</a></nav>
+      <section class="section wrap research-project-body">
+        <article class="research-panel reveal" id="overview">
+          <p class="case-type">Research question</p><h2>Can geometric boundaries make URL decisions inspectable?</h2>
+          <div class="research-two-col"><div><strong>The problem</strong><p>Phishing infrastructure changes faster than static blacklists. CyberHull studies whether explicit boundaries around observed legitimate web behaviour can identify suspicious URLs without a deep neural classifier.</p></div><div><strong>The contribution</strong><p>The framework projects content, language, and link features into several geometric spaces called vaults. Each vault encloses legitimate examples in a convex hull. A request is accepted by the model only when its projected features satisfy every selected boundary.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="method">
+          <p class="case-type">Methodology</p><h2>From web features to a geometric decision.</h2>
+          <ol class="research-flow"><li>Extract web features</li><li>Rank feature pairs</li><li>Construct convex hulls</li><li>Project an unseen URL</li><li>Check each boundary</li><li>Return a URL label</li></ol><div class="research-two-col"><div><strong>Offline construction</strong><ul><li>Extract 91 features from the enriched benchmark.</li><li>Rank candidate pairs using the difference between class means divided by the sum of class standard deviations.</li><li>The study evaluates 4,095 pairs and retains 46 vaults; its explanation highlights three complementary feature domains.</li><li>Use QuickHull to enclose the legitimate training points in each selected space.</li></ul></div><div><strong>Inference</strong><p>Project an incoming URL into the same feature spaces and apply containment tests. Falling outside a selected hull produces a malicious classification. This is a deterministic decision rule over measured features; being inside a hull is not proof that a website is safe.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="features">
+          <p class="case-type">Feature design</p><h2>Three complementary views of a website.</h2>
+          <div class="research-table-wrap" role="region" aria-label="CyberHull feature spaces" tabindex="0"><table class="research-table"><caption>Feature domains described in the preprint</caption><thead><tr><th scope="col">Domain</th><th scope="col">Signals</th><th scope="col">Purpose</th></tr></thead><tbody><tr><th scope="row">Structural entropy</th><td>Shannon entropy and internal-page entropy</td><td>Describe content variability and repetition.</td></tr><tr><th scope="row">Semantic content</th><td>TF-IDF distributions of informational and urgency-related tokens</td><td>Represent language and page intent.</td></tr><tr><th scope="row">Hyperlink topology</th><td>Internal link density and outbound link ratios</td><td>Describe site connectivity.</td></tr></tbody></table></div>
+        </article>
+        <article class="research-panel reveal" id="evaluation">
+          <p class="case-type">Reported evaluation</p><h2>92% accuracy in the paper’s benchmark.</h2>
+          <p>The revised preprint describes an 80/20 stratified split and reports averaged results from stratified five-fold cross-validation. Table 3 compares methods on the same feature representation. These are author-reported experimental results, not independently reproduced measurements.</p><div class="research-table-wrap" role="region" aria-label="CyberHull benchmark results" tabindex="0"><table class="research-table"><caption>Reported results · arXiv v2, Table 3</caption><thead><tr><th scope="col">Method</th><th scope="col">Accuracy</th><th scope="col">Precision</th><th scope="col">Recall</th><th scope="col">F1</th><th scope="col">False-positive rate</th></tr></thead><tbody><tr><th scope="row">PCA</th><td>32%</td><td>0.28</td><td>0.31</td><td>0.29</td><td>0.41</td></tr><tr><th scope="row">SVM</th><td>81%</td><td>0.79</td><td>0.76</td><td>0.77</td><td>0.14</td></tr><tr><th scope="row">Random Forest</th><td>88%</td><td>0.86</td><td>0.84</td><td>0.85</td><td>0.09</td></tr><tr><th scope="row">XGBoost</th><td>90%</td><td>0.89</td><td>0.87</td><td>0.88</td><td>0.07</td></tr><tr class="result-highlight"><th scope="row">CyberHull</th><td>92%</td><td>0.93</td><td>0.91</td><td>0.92</td><td>0.03</td></tr></tbody></table></div><p class="research-source">Source: <a href="https://arxiv.org/html/2610.27675v2#S4.T3" target="_blank" rel="noopener">CyberHull v2, Table 3 ↗</a>. The separate count of 1,314 intercepted attacks out of 1,470 in Table 2 is not the same statistic as the cross-validation accuracy above.</p><p>The implementation uses Python 3.12, NumPy, Pandas, and SciPy Spatial. The paper describes CPU experiments on an Intel Core i7 with 16 GB RAM, with scikit-learn and XGBoost baselines.</p>
+        </article>
+        <article class="research-panel reveal" id="limits">
+          <p class="case-type">Scope and future work</p><h2>Boundary quality depends on the data behind it.</h2>
+          <div class="research-two-col"><div><strong>Current boundaries</strong><ul><li>Contaminated legitimate training data can distort the learned hulls.</li><li>Strict feature extraction removes unusable samples and limits the diversity represented in the evaluation.</li><li>Changes in legitimate websites can produce false positives unless boundaries are refreshed.</li><li>Results from this benchmark should not be directly ranked against SiNMULI or ASTriA results from different evaluations.</li></ul></div><div><strong>Future directions</strong><p>The authors propose adaptive perimeter updates, broader validation on changing traffic, and federated feedback between edge nodes. These are research directions rather than established deployment capabilities.</p></div></div>
+        </article>
+        <article class="research-panel reveal" id="resources">
+          <p class="case-type">Open artifacts</p><h2>Read, inspect, and cite the work.</h2>
+          <p>First submitted 20 October 2026; revised 23 October 2026 (v2). This page follows v2. Status: arXiv preprint.</p><div class="paper-links"><a href="https://arxiv.org/abs/2610.27675" target="_blank" rel="noopener">arXiv record ↗</a><a href="https://arxiv.org/html/2610.27675v2" target="_blank" rel="noopener">Full text (v2) ↗</a><a href="https://arxiv.org/pdf/2610.27675v2" target="_blank" rel="noopener">PDF (v2) ↗</a><a href="https://github.com/AniketGhosal/CyberHull-URL-Detection" target="_blank" rel="noopener">Author-linked code & data ↗</a><a href="https://doi.org/10.48550/arXiv.2610.27675" target="_blank" rel="noopener">DOI ↗</a></div><p class="research-source">Summary based on the authors’ CC BY 4.0 preprint. Source checked 27 October 2026.</p>
+        </article>
+        <article class="research-panel reveal">
+          <p class="case-type">Continue exploring</p>
+          <h2>Related research</h2>
+          <div class="paper-links">
+            <a href="cyberhull.html">CyberHull</a><a href="sinmuli.html">SiNMULI</a>
+            <a href="astria.html">ASTriA</a><a href="entrourl.html">EntroURL-Bench</a>
+            <a href="carbon-loss.html">Carbon-loss estimation</a><a href="./">Full publication archive →</a>
+          </div>
+        </article>
+        <div id="citation-status" class="citation-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><span>SM</span>Sayan Mondal</a>
+          <p>Architect &middot; Researcher &middot; Builder</p>
+        </div>
+        <div>
+          <a href="../pages/projects.html">Projects</a>
+          <a href="../pages/architecture.html">Architecture</a>
+          <a href="./">Papers</a>
+          <a href="../pages/resume.html">Resume</a>
+          <a href="../pages/contact.html">Contact</a>
+          <a
+            href="https://www.linkedin.com/in/sayanmondal2098/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/sayanmondal2098"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+        <p>&copy; <span id="year">2026</span> Sayan Mondal</p>
+      </div>
+    </footer>
+  </body>
+</html>
