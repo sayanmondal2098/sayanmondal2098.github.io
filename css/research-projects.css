@@ -32,6 +32,16 @@
   gap: 24px;
 }
 
+.research-directory {
+  margin-bottom: 64px;
+}
+
+.research-directory .paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+}
+
 .research-project-body a {
   color: #5846c5;
   text-underline-offset: 3px;

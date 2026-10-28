@@ -12,6 +12,26 @@ The website archive contains **nine works**: the seven Scholar entries plus the 
 
 CyberHull and the carbon-loss paper are CC BY 4.0. New page descriptions are paraphrased and link to the originals. Existing publication records were preserved. The downloadable Word/PDF CV files are separate artifacts; this update changes the web résumé.
 
+## Refactor follow-up — 28 October 2026
+
+All nine archived works now have dedicated pages. The three older pages use
+the existing BibTeX metadata and these public records:
+
+- Railway crossing: [IEEE record](https://ieeexplore.ieee.org/document/9223092/)
+  and [coauthor’s institutional publication list](https://www.nsec.ac.in/fps/faculty.php?id=226).
+  The page describes the GPS-based algorithm without adding performance or
+  field-validation claims.
+- Dimensionality reduction: [author-uploaded report record](https://www.researchgate.net/publication/340090679_Some_observations_and_problems_explored_on_dimensionality_reduction_of_text_documents).
+  The public abstract supports only an exploratory description. Full text is
+  request-only; no algorithm details, results, or DOI were invented.
+- Street lighting: [author-uploaded preprint and manuscript](https://www.researchgate.net/publication/343223988_Smart_Street_Light_Control_System_Using_an_Algorithm_and_image_processing).
+  The December 2017 preprint date is distinct from the July 2020 upload date.
+  Energy savings and safety are goals, not quantified outcomes on this page.
+
+The Scholar profile returned HTTP 429 during this follow-up. Existing metrics
+retain their **27 October 2026** snapshot date. CyberHull’s title, authors, and
+23 October v2 revision were rechecked against the arXiv record.
+
 ## Future updates
 
 Recheck the Scholar profile before changing dated metrics. Update the archive, homepage, project summary, web résumé, citation registry, and BibTeX together. Keep preprint revisions distinct from new publications. Numerical results belong to their stated dataset and evaluation protocol; do not compare unrelated papers' accuracy as a common leaderboard.

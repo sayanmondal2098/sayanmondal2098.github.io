@@ -5,6 +5,32 @@
   margin-top: 32px;
 }
 
+.publication-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 28px;
+}
+
+.publication-index a {
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.publication-index a:hover,
+.publication-index a:focus-visible {
+  background: #f1effa;
+  border-color: var(--violet);
+}
+
+.paper-card[id] {
+  scroll-margin-top: 100px;
+}
+
 .button-outline {
   background: transparent;
   color: var(--ink) !important;

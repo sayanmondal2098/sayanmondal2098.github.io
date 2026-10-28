@@ -1,15 +1,3 @@
-const citationFiles = {
-  cyberhull: "citations/gayen2026cyberhull.bib",
-  "carbon-loss": "citations/raha2022carbon.bib",
-  astria: "citations/gayen2026astria.bib",
-  sinmuli: "citations/gayen2026sinmuli.bib",
-  cairn: "citations/mondal2026cairn.bib",
-  entrourl: "citations/gayen2026entrourl.bib",
-  railway: "citations/banerjee2020railway.bib",
-  dimensionality: "citations/chakraborty2020dimensionality.bib",
-  streetlight: "citations/mondal2017streetlight.bib",
-};
-
 const citationStatus = document.getElementById("citation-status");
 let toastTimer;
 
@@ -26,8 +14,12 @@ const showCitationToast = (message, type = "success") => {
 
 const copyText = async (text) => {
   if (navigator.clipboard && window.isSecureContext) {
-    await navigator.clipboard.writeText(text);
-    return;
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch {
+      // Some browsers deny clipboard access even on a secure origin.
+    }
   }
 
   const textarea = document.createElement("textarea");
@@ -37,33 +29,43 @@ const copyText = async (text) => {
   textarea.style.opacity = "0";
   document.body.appendChild(textarea);
   textarea.select();
-  document.execCommand("copy");
-  textarea.remove();
+  try {
+    if (!document.execCommand("copy")) {
+      throw new Error("Clipboard access was denied.");
+    }
+  } finally {
+    textarea.remove();
+  }
 };
 
 document.querySelectorAll("[data-copy-citation]").forEach((button) => {
   button.addEventListener("click", async () => {
-    const citationId = button.dataset.copyCitation;
-    const citationPath = citationFiles[citationId];
+    // The adjacent download is the source of truth for this work's BibTeX.
+    const citationLink = button
+      .closest(".citation-actions, .profile-actions")
+      ?.querySelector('a[download][href$=".bib"]');
     const originalLabel = button.textContent;
+    button.disabled = true;
+    button.setAttribute("aria-busy", "true");
 
     try {
-      const response = await fetch(citationPath);
+      if (!citationLink) throw new Error("No BibTeX download is linked.");
+      const response = await fetch(citationLink.href);
       if (!response.ok) throw new Error("Citation file could not be loaded.");
       await copyText((await response.text()).trim());
       button.textContent = "Copied ✓";
       showCitationToast(`${button.dataset.title} BibTeX copied to clipboard.`);
-      window.setTimeout(() => {
-        button.textContent = originalLabel;
-      }, 2200);
     } catch (error) {
       button.textContent = "Copy failed";
       showCitationToast(
         `Could not copy ${button.dataset.title}. Use the BibTeX download instead.`,
         "error",
       );
+    } finally {
+      button.removeAttribute("aria-busy");
       window.setTimeout(() => {
         button.textContent = originalLabel;
+        button.disabled = false;
       }, 2200);
     }
   });
