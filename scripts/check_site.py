@@ -38,6 +38,7 @@ class Page(HTMLParser):
 
 def check():
     files = [ROOT / 'index.html', *sorted((ROOT / 'pages').glob('*.html')),
+             *sorted((ROOT / 'projects').glob('*.html')),
              *sorted((ROOT / 'research').glob('*.html'))]
     pages = {}
     errors = []

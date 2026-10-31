@@ -1,4 +1,4 @@
-const isNestedPage = ["/pages/", "/research/"].some((segment) =>
+const isNestedPage = ["/pages/", "/research/", "/projects/"].some((segment) =>
   window.location.pathname.includes(segment),
 );
 const assetRoot = isNestedPage ? "../" : "";

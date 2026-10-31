@@ -5,6 +5,9 @@ Personal portfolio and research archive for Sayan Mondal. The site is plain HTML
 Research pages, the publication archive, and BibTeX records are grouped under
 [`research/`](research/README.md) for easier maintenance.
 
+Project case studies are grouped under [`projects/`](projects/index.html),
+including the dedicated [PaperHarbor details page](projects/paperharbor.html).
+
 ## Local preview
 
 Open `index.html` directly, or serve the repository with any static web server.

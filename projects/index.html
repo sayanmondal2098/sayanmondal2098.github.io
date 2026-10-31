@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Selected projects and case studies by Sayan Mondal across enterprise AI, ServiceNow, cybersecurity research, and trustworthy machine learning."
+      content="Selected projects and case studies by Sayan Mondal across enterprise AI, ServiceNow, cybersecurity research, trustworthy machine learning, and PaperHarbor research tooling."
     />
     <meta name="theme-color" content="#08111f" />
     <link
@@ -16,7 +16,7 @@
     <title>Projects & Case Studies - Sayan Mondal</title>
     <link
       rel="canonical"
-      href="https://sayanmondal2098.github.io/pages/projects.html"
+      href="https://sayanmondal2098.github.io/projects/"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,11 +46,11 @@
         <div class="nav-links" id="nav-links">
           <a href="../index.html#work">Work</a
           ><a href="../index.html#research">Research</a
-          ><a href="projects.html" aria-current="page">Projects</a
-          ><a href="architecture.html">Architecture</a
+          ><a href="./" aria-current="page">Projects</a
+          ><a href="../pages/architecture.html">Architecture</a
           ><a href="../index.html#education">Education</a
           ><a href="../research/">Papers</a><a href="../index.html#blog">Blog</a
-          ><a class="button button-small" href="contact.html">Contact</a>
+          ><a class="button button-small" href="../pages/contact.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -67,6 +67,7 @@
         <div class="profile-actions">
           <a class="button" href="#agentic-ai">Enterprise AI</a
           ><a class="button button-outline" href="#servicenow">ServiceNow</a
+          ><a class="button button-outline" href="#paperharbor">PaperHarbor</a
           ><a class="button button-outline" href="#cyberhull">CyberHull</a
           ><a class="button button-outline" href="#carbon-loss">Carbon-loss study</a
           ><a class="button button-outline" href="#sinmuli">SiNMULI</a
@@ -74,7 +75,7 @@
           ><a class="button button-outline" href="#cairn">CAIRN</a
           ><a class="button button-outline" href="../research/">All nine research pages</a
           ><a class="button button-outline" href="#entrourl">EntroURL-Bench</a
-          ><a class="button button-outline" href="architecture.html"
+          ><a class="button button-outline" href="../pages/architecture.html"
             >Architecture Portfolio</a
           >
         </div>
@@ -84,11 +85,12 @@
         class="research-summary wrap reveal"
         aria-label="Project overview"
       >
-        <div><strong>8</strong><span>case studies</span></div>
+        <div><strong>9</strong><span>case studies</span></div>
         <div><strong>2</strong><span>enterprise cases</span></div>
         <div><strong>6</strong><span>research cases</span></div>
         <p>
-          Enterprise delivery details are intentionally anonymized where project
+          Includes one research tool: PaperHarbor. Enterprise delivery details
+          are intentionally anonymized where project
           data, customer context, demos, or production metrics are private.
         </p>
       </section>
@@ -247,6 +249,73 @@
                 are confidential.
               </p>
               <span>Demo/link: not public</span>
+            </div>
+          </article>
+
+          <article class="case-study reveal" id="paperharbor">
+            <div class="case-study-head">
+              <p class="case-type">Research tooling</p>
+              <h2>PaperHarbor: scholarly PDF discovery and archiving</h2>
+              <p>
+                Finds available open-access papers and saves an organized PDF
+                collection through a local web interface or command line.
+              </p>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Research workflow problem</strong>
+                <p>
+                  Collecting full texts across a bibliography requires repeated
+                  searches, downloads, and file naming. PaperHarbor accepts
+                  individual DOIs or URLs, Zotero libraries, BibTeX, and CSL-JSON.
+                </p>
+              </div>
+              <div>
+                <strong>Technology stack</strong>
+                <div class="tech-list">
+                  <span>Python</span><span>Requests</span><span>Beautiful Soup</span>
+                  <span>pypdf</span><span>SQLite</span><span>Zotero Web API</span><span>CSV</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Architectural decisions</strong>
+                <ul>
+                  <li>Separate reference readers, provider aggregation, landing-page resolution, downloads, and reporting in a shared pipeline.</li>
+                  <li>Use conditional provider fallbacks, deduplicate candidate URLs, and reject conflicting DOI matches.</li>
+                  <li>Validate PDF headers and download sizes before saving files with configurable names.</li>
+                  <li>Record each outcome and its attempt history in CSV for targeted retries and manual follow-up.</li>
+                </ul>
+              </div>
+              <div>
+                <strong>Data handling and limitations</strong>
+                <p>
+                  The web server binds to localhost. Zotero database reads use a
+                  temporary copy; downloads go to a separate folder. Existing
+                  PDFs are skipped by default. Availability depends on source
+                  access; blocked downloads include manual follow-up links.
+                </p>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div>
+                <strong>Researcher experience</strong>
+                <p>Load an individual DOI or URL, local Zotero database, BibTeX or CSL-JSON export, personal or group API library, or a previous report. The browser interface supports reference search, collection filtering, selection, progress, and logs; the CLI supports repeatable batches.</p>
+              </div>
+              <div>
+                <strong>Reliability and recovery</strong>
+                <p>Skip existing PDFs, reuse duplicate DOI outcomes within a run, and continue after individual reference errors. Transient downloads use bounded retries. Unresolved results retain diagnostic notes, suggested filenames, and recovery actions.</p>
+              </div>
+            </div>
+            <div class="system-diagram" aria-label="PaperHarbor discovery workflow">
+              <span>References</span><span>PDF discovery</span>
+              <span>Validation</span><span>Local archive</span><span>CSV report</span>
+            </div>
+            <div class="case-footer">
+              <p><strong>Outcome:</strong> a repeatable workflow for building a personal paper archive.</p>
+              <a href="paperharbor.html">View project details →</a>
+              <a href="https://github.com/sayanmondal2098/PaperHarbor" target="_blank" rel="noopener">View source &amp; setup ↗</a>
             </div>
           </article>
 
@@ -606,11 +675,11 @@
           <p>Architect &middot; Researcher &middot; Builder</p>
         </div>
         <div>
-          <a href="projects.html">Projects</a>
-          <a href="architecture.html">Architecture</a>
+          <a href="./">Projects</a>
+          <a href="../pages/architecture.html">Architecture</a>
           <a href="../research/">Papers</a>
-          <a href="resume.html">Resume</a>
-          <a href="contact.html">Contact</a>
+          <a href="../pages/resume.html">Resume</a>
+          <a href="../pages/contact.html">Contact</a>
           <a
             href="https://www.linkedin.com/in/sayanmondal2098/"
             target="_blank"

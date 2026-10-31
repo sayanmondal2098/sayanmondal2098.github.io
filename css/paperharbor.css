@@ -1,0 +1,18 @@
+.paperharbor-code {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 18px 0;
+  padding: 20px;
+  border: 1px solid #d9d4f5;
+  border-radius: 12px;
+  background: #f7f5ff;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.7;
+  tab-size: 2;
+}
+
+.paperharbor-code code {
+  font: inherit;
+  font-family: Consolas, "Courier New", monospace;
+}
